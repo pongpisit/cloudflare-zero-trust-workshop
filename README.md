@@ -1,0 +1,118 @@
+# Cloudflare Zero Trust Workshop
+
+A comprehensive hands-on workshop for implementing Cloudflare Zero Trust security features.
+
+## Workshop Overview
+
+| Module | Topic | Duration | Features |
+|--------|-------|----------|----------|
+| 01 | [Prerequisites & Setup](./docs/01-prerequisites.md) | 30 min | Account setup, WARP client |
+| 02 | [DNS Filtering](./docs/02-dns-filtering.md) | 45 min | DNS policies, content categories |
+| 03 | [Secure Web Gateway](./docs/03-secure-web-gateway.md) | 60 min | HTTP policies, TLS inspection |
+| 04 | [Anti-Virus & File Scanning](./docs/04-antivirus-scanning.md) | 30 min | Malware protection, file scanning |
+| 05 | [Data Loss Prevention](./docs/05-dlp.md) | 45 min | DLP profiles, sensitive data detection |
+| 06 | [CASB](./docs/06-casb.md) | 45 min | SaaS security, shadow IT detection |
+| 07 | [Zero Trust Network Access](./docs/07-ztna.md) | 60 min | Access policies, private applications |
+
+**Total Duration:** ~5.5 hours
+
+## What You Will Learn
+
+- Set up Cloudflare Zero Trust organization
+- Deploy WARP client to devices
+- Create DNS filtering policies to block malicious sites
+- Configure Secure Web Gateway (SWG) with HTTP policies
+- Enable TLS inspection for deep packet analysis
+- Set up anti-virus scanning for file uploads/downloads
+- Implement Data Loss Prevention (DLP) policies
+- Integrate CASB for SaaS application security
+- Configure Zero Trust Network Access (ZTNA) for private applications
+
+## Prerequisites
+
+- Cloudflare account (free tier available)
+- Windows, macOS, or Linux computer
+- Administrator access to install software
+- Web browser (Chrome, Firefox, or Edge recommended)
+
+## Quick Start
+
+1. **Create Cloudflare Account:** https://dash.cloudflare.com/sign-up
+2. **Access Zero Trust Dashboard:** https://one.dash.cloudflare.com
+3. **Follow the modules in order**
+
+## Zero Trust Architecture
+
+```
+                    ┌─────────────────────────────────────────────┐
+                    │           Cloudflare Zero Trust             │
+                    │                                             │
+┌─────────┐        │  ┌─────────┐  ┌─────────┐  ┌─────────┐     │        ┌─────────┐
+│  User   │◄──────►│  │   DNS   │  │   SWG   │  │  ZTNA   │     │◄──────►│ Internet│
+│ Device  │  WARP  │  │ Filter  │  │  HTTP   │  │ Access  │     │        │  & Apps │
+│ (WARP)  │        │  └─────────┘  └─────────┘  └─────────┘     │        └─────────┘
+└─────────┘        │       │            │            │          │
+                    │       ▼            ▼            ▼          │
+                    │  ┌─────────────────────────────────────┐   │
+                    │  │     Security Services               │   │
+                    │  │  • Anti-Virus  • DLP  • CASB        │   │
+                    │  └─────────────────────────────────────┘   │
+                    └─────────────────────────────────────────────┘
+```
+
+## Key Features Covered
+
+### DNS Filtering (Module 02)
+- Block malicious domains
+- Content category filtering
+- Safe Search enforcement
+- Custom block pages
+
+### Secure Web Gateway (Module 03)
+- HTTP/HTTPS traffic inspection
+- TLS decryption
+- URL filtering
+- Application control
+
+### Anti-Virus & Sandbox (Module 04)
+- Real-time malware scanning
+- File upload/download protection
+- Threat intelligence integration
+
+### Data Loss Prevention (Module 05)
+- Predefined DLP profiles
+- Custom detection patterns
+- Credit card, SSN, API key detection
+- Block or log sensitive data
+
+### CASB (Module 06)
+- SaaS application discovery
+- Misconfiguration detection
+- Shadow IT visibility
+- Integration with Microsoft 365, Google Workspace
+
+### ZTNA (Module 07)
+- Replace VPN with Zero Trust
+- Application-level access control
+- Identity-based policies
+- Cloudflare Tunnel setup
+
+## Useful Links
+
+- **Zero Trust Dashboard:** https://one.dash.cloudflare.com
+- **Documentation:** https://developers.cloudflare.com/cloudflare-one/
+- **WARP Client Downloads:** https://one.one.one.one/
+- **Learning Paths:** https://developers.cloudflare.com/learning-paths/
+
+## Support
+
+- **Community Forum:** https://community.cloudflare.com
+- **Discord:** https://discord.cloudflare.com
+
+---
+
+**Workshop Repository:** https://github.com/pongpisit/cloudflare-zero-trust-workshop
+
+**Author:** Pongpisit
+
+**Last Updated:** December 2024
