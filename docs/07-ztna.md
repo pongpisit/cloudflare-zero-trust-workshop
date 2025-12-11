@@ -145,7 +145,7 @@ Created tunnel my-tunnel with id xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx
 
 Alternatively, use the dashboard:
 
-1. **Go to:** Zero Trust > Networks > Tunnels
+1. **Go to:** Networks > Tunnels
 2. Click **"Create a tunnel"**
 3. Select **"Cloudflared"**
 4. **Name:** `my-tunnel`
@@ -217,7 +217,7 @@ cloudflared tunnel route dns my-tunnel app.yourdomain.com
 
 ### 5.2 Via Dashboard
 
-1. **Go to:** Zero Trust > Networks > Tunnels
+1. **Go to:** Networks > Tunnels
 2. Click on your tunnel
 3. Go to **"Public Hostname"** tab
 4. Click **"Add a public hostname"**
@@ -260,7 +260,7 @@ sudo systemctl enable cloudflared
 
 ### 6.3 Verify Tunnel Status
 
-**Go to:** Zero Trust > Networks > Tunnels
+**Go to:** Networks > Tunnels
 
 Your tunnel should show as **"Healthy"** (green).
 
@@ -272,7 +272,7 @@ Protect your application with Access policies.
 
 ### 7.1 Add Application
 
-**Go to:** Zero Trust > Access > Applications
+**Go to:** Access > Applications
 
 1. Click **"Add an application"**
 2. Select **"Self-hosted"**
@@ -339,7 +339,7 @@ Reusable groups for policies.
 
 ### 9.1 Add Group
 
-**Go to:** Zero Trust > Access > Access Groups
+**Go to:** Access > Access Groups
 
 1. Click **"Add a group"**
 2. **Name:** Employees

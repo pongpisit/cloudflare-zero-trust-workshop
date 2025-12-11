@@ -60,7 +60,7 @@
 
 Check that Browser Isolation is enabled for your account.
 
-> **Note:** Clientless Web Isolation requires appropriate license (TOR 5.2.1 specifies 500 concurrent sessions/month).
+> **Note:** Clientless Web Isolation requires appropriate license.
 
 ---
 

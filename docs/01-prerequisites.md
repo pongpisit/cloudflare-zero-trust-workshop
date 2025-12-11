@@ -97,9 +97,13 @@ Before users can enroll devices, you need to set up authentication.
 
 **Go to:** Settings > Authentication > Login methods
 
-1. Click **"Add new"**
-2. Select **"One-time PIN"**
-3. Click **"Add"**
+1. Open https://one.dash.cloudflare.com/
+2. In the left sidebar, click **Settings**
+3. Click **Authentication**
+4. Click **Login methods**
+5. Click **"Add new"**
+6. Select **"One-time PIN"**
+7. Click **"Add"**
 
 > **Note:** One-time PIN sends a code to the user's email. This is the simplest method for workshops.
 
@@ -122,7 +126,12 @@ Define who can enroll devices in your organization.
 
 ### 4.1 Create Enrollment Rule
 
-**Go to:** Settings > WARP Client > Device enrollment > Manage
+**Go to:** Team & Resources > Devices > Device enrollment > Manage
+
+1. In the left sidebar, click **Team & Resources**
+2. Click **Devices**
+3. Click **Device enrollment**
+4. Click **Manage**
 
 1. Click **"Add a rule"**
 2. **Rule name:** `Allow all users` (for workshop)
@@ -216,7 +225,7 @@ Back in the WARP client:
 
 ### 7.1 Check in Dashboard
 
-**Go to:** Zero Trust Dashboard > My Team > Devices
+**Go to:** Zero Trust Dashboard > Team & Resources > Devices
 
 You should see your device listed with:
 - Device name
@@ -243,7 +252,7 @@ To enable TLS inspection and HTTP filtering, install the Cloudflare root certifi
 
 ### 8.1 Download Certificate
 
-**Go to:** Settings > WARP Client > Download certificate
+**Go to:** Team & Resources > Devices > User-side certificates
 
 Or download directly from:
 ```
@@ -326,9 +335,9 @@ https://developers.cloudflare.com/cloudflare-one/connections/connect-devices/war
 | Zero Trust Dashboard | https://one.dash.cloudflare.com |
 | WARP Downloads | https://one.one.one.one |
 | Team Name | Settings > General |
-| Device List | My Team > Devices |
+| Device List | Team & Resources > Devices |
 | Authentication | Settings > Authentication |
-| Enrollment Rules | Settings > WARP Client > Device enrollment |
+| Enrollment Rules | Team & Resources > Devices > Device enrollment |
 
 ---
 

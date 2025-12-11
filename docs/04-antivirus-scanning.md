@@ -58,7 +58,10 @@ Before enabling AV scanning:
 
 **Go to:** Settings > Network > Firewall
 
-Or: Gateway > Firewall Policies > Settings
+1. Open https://one.dash.cloudflare.com/
+2. In the left sidebar, click **Settings**
+3. Click **Network**
+4. Scroll to **Firewall** section
 
 ### 1.2 Enable AV Scanning
 

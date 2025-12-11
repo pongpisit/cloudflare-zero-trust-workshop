@@ -37,8 +37,9 @@
 ### 1.1 Navigate to Logs
 
 1. Open https://one.dash.cloudflare.com/
-2. In the left sidebar, click **Logs**
-3. Click **Gateway**
+2. In the left sidebar, click **Insights**
+3. Click **Logs**
+4. Select **Gateway**
 
 ### 1.2 Log Types
 
@@ -54,7 +55,7 @@
 
 ### 2.1 Access DNS Logs
 
-1. Go to **Logs** > **Gateway** > **DNS**
+1. Go to **Insights** > **Logs** > **Gateway** > **DNS**
 
 ### 2.2 Log Fields
 
@@ -93,7 +94,7 @@
 
 ### 3.1 Access HTTP Logs
 
-1. Go to **Logs** > **Gateway** > **HTTP**
+1. Go to **Insights** > **Logs** > **Gateway** > **HTTP**
 
 ### 3.2 Log Fields
 

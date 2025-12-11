@@ -69,7 +69,7 @@ Or direct links:
 ### 3.1 Create DNS Policy
 
 1. Go to https://one.dash.cloudflare.com/
-2. Click **Gateway** > **Firewall Policies**
+2. Click **Traffic Policies**
 3. Select **DNS** tab
 4. Click **Add a policy**
 
@@ -100,7 +100,7 @@ Or direct links:
 
 ### 4.2 Create HTTP Policy
 
-1. Go to **Gateway** > **Firewall Policies**
+1. Go to **Traffic Policies**
 2. Select **HTTP** tab
 3. Click **Add a policy**
 
@@ -138,13 +138,13 @@ Or direct links:
 
 ### 6.1 Check DNS Logs
 
-1. Go to **Logs** > **Gateway** > **DNS**
+1. Go to **Insights** > **Logs** > **Gateway** > **DNS**
 2. Review recent queries
 3. Look for blocked requests (red)
 
 ### 6.2 Check HTTP Logs
 
-1. Go to **Logs** > **Gateway** > **HTTP**
+1. Go to **Insights** > **Logs** > **Gateway** > **HTTP**
 2. Review recent requests
 3. Look for blocked requests
 

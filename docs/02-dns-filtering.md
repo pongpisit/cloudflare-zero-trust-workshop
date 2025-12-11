@@ -43,12 +43,11 @@
 
 ## Step 1: Access DNS Policies
 
-**Go to:** Zero Trust Dashboard > Gateway > Firewall Policies > DNS
+**Go to:** Zero Trust Dashboard > Traffic Policies > DNS
 
 1. Open https://one.dash.cloudflare.com/
-2. In the left sidebar, click **Gateway**
-3. Click **Firewall Policies**
-4. Select the **DNS** tab
+2. In the left sidebar, click **Traffic Policies**
+3. Select the **DNS** tab
 
 You will see the DNS policies page where you can create and manage policies.
 
@@ -297,7 +296,7 @@ http://adult.testcategory.com
 
 ### 9.4 Check DNS Logs
 
-**Go to:** Logs > Gateway > DNS
+**Go to:** Insights > Logs > Gateway > DNS
 
 You should see:
 - Allowed queries (green)
@@ -312,7 +311,7 @@ Filter DNS for specific office locations.
 
 ### 10.1 Add DNS Location
 
-**Go to:** Gateway > DNS Locations > Add a location
+**Go to:** Networks > DNS Locations > Add a location
 
 1. **Name:** `Main Office`
 2. **Note the DNS addresses provided:**

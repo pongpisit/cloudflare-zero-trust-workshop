@@ -110,12 +110,11 @@ Block access to security threats at the HTTP level.
 
 ### 3.1 Access HTTP Policies
 
-**Go to:** Gateway > Firewall Policies > HTTP
+**Go to:** Traffic Policies > HTTP
 
 1. Open https://one.dash.cloudflare.com/
-2. In the left sidebar, click **Gateway**
-3. Click **Firewall Policies**
-4. Select the **HTTP** tab
+2. In the left sidebar, click **Traffic Policies**
+3. Select the **HTTP** tab
 
 ### 3.2 Add New Policy
 
@@ -274,7 +273,7 @@ Some applications break when TLS is inspected. Create bypass rules.
 
 ### 8.1 Common Applications to Bypass
 
-**Go to:** Gateway > Firewall Policies > HTTP
+**Go to:** Traffic Policies > HTTP
 
 1. Click **"Add a policy"**
 2. **Name:** `Do Not Inspect - Certificate Pinned Apps`
@@ -347,7 +346,7 @@ Isolate risky websites in a remote browser.
 
 ### 10.3 Check HTTP Logs
 
-**Go to:** Logs > Gateway > HTTP
+**Go to:** Insights > Logs > Gateway > HTTP
 
 You should see:
 - Request URL

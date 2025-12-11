@@ -57,13 +57,11 @@ Before configuring DLP:
 
 ## Step 1: Access DLP Settings
 
-**Go to:** Gateway > DLP Profiles
+**Go to:** Data Loss Prevention > DLP Profiles
 
-Or: Settings > DLP
-
-```
-https://one.dash.cloudflare.com/ > Gateway > DLP Profiles
-```
+1. Open https://one.dash.cloudflare.com/
+2. In the left sidebar, click **Data Loss Prevention**
+3. Click **DLP Profiles**
 
 ---
 
