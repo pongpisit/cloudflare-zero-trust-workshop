@@ -9,7 +9,18 @@
 - Understand Analytics dashboards
 - Set up notifications and alerts
 - Export logs for SIEM integration
+- Configure log retention (TOR 5.3.1: 90 days)
 - Troubleshoot common issues using logs
+
+---
+
+## TOR Compliance Highlights
+
+This module covers the following TOR requirements:
+
+| TOR | Feature | Status |
+|-----|---------|--------|
+| 5.3.1 | Log retention at least 90 days in Cloud Storage | ✅ |
 
 ---
 
@@ -324,7 +335,7 @@ For continuous log export to SIEM:
 
 ---
 
-## Step 9: Log Retention
+## Step 9: Log Retention (TOR 5.3.1)
 
 ### 9.1 Default Retention
 
@@ -334,12 +345,56 @@ For continuous log export to SIEM:
 | Gateway HTTP | 24 hours | 30 days |
 | Access | 24 hours | 30 days |
 
-### 9.2 Extended Retention
+### 9.2 Extended Retention to 90 Days (TOR Requirement)
 
-For longer retention:
-- Use Logpush to export to your storage
-- Configure retention in your SIEM
-- Archive to cold storage as needed
+**TOR 5.3.1 requires at least 90 days of log retention.**
+
+To achieve 90-day retention, use **Logpush** to export logs to cloud storage:
+
+#### Option 1: Cloudflare R2 Storage
+
+1. Go to **Logs** > **Logpush**
+2. Click **Create Logpush job**
+3. Select log type: Gateway DNS, Gateway HTTP
+4. Destination: **Cloudflare R2**
+5. Configure R2 bucket
+6. Set retention policy to 90+ days
+
+#### Option 2: External Cloud Storage
+
+Export to your preferred cloud storage:
+
+| Provider | Retention |
+|----------|-----------|
+| Amazon S3 | Configure lifecycle policy |
+| Google Cloud Storage | Configure retention policy |
+| Azure Blob Storage | Configure retention policy |
+
+#### Option 3: SIEM Integration
+
+Export to SIEM with 90-day retention:
+- Splunk
+- Microsoft Sentinel
+- Datadog
+- Sumo Logic
+
+### 9.3 Configure Logpush for 90-Day Retention
+
+1. Go to **Logs** > **Logpush**
+2. Click **Create Logpush job**
+3. **Log type:** Gateway DNS
+4. **Destination:** R2 or S3
+5. **Frequency:** Every 5 minutes
+6. Click **Save**
+
+Repeat for Gateway HTTP logs.
+
+### 9.4 Verify Log Storage
+
+After configuring Logpush:
+1. Wait for logs to be pushed (5-15 minutes)
+2. Check destination storage for log files
+3. Verify retention policy is set to 90+ days
 
 ---
 

@@ -6,10 +6,32 @@
 
 - Understand how DNS filtering works
 - Create DNS policies to block threats
-- Filter content by category
-- Enable Safe Search
-- Configure custom block pages
+- Filter content by category (TOR 5.1.2.7)
+- Enable Safe Search and YouTube Restricted Mode
+- Use advanced selectors: Source IP, Domain, User Identity (TOR 5.1.2.4)
+- Use comparison and logical operators (TOR 5.1.2.5)
+- Configure DNSSEC validation (TOR 5.1.2.12)
+- Filter by DNS Record Type (TOR 5.1.2.13)
 - Test DNS filtering
+
+---
+
+## TOR Compliance Highlights
+
+This module covers the following TOR requirements:
+
+| TOR | Feature | Status |
+|-----|---------|--------|
+| 5.1.2.2 | Policy by Source IP, Domain, Host, Application | ✅ |
+| 5.1.2.3 | Actions: Allow, Block, Override, Safe Search | ✅ |
+| 5.1.2.4 | Selectors: Domain, Content/Security Categories, User Identity | ✅ |
+| 5.1.2.5 | Operators: is, in, and, or | ✅ |
+| 5.1.2.6 | Regular Expressions | ✅ |
+| 5.1.2.7 | Security Categories (Malware, Phishing, C2, DGA, etc.) | ✅ |
+| 5.1.2.8 | Geolocation-based policies | ✅ |
+| 5.1.2.11 | CIPA filter for child protection | ✅ |
+| 5.1.2.12 | DNSSEC validation | ✅ |
+| 5.1.2.13 | Filter by DNS Record Type | ✅ |
 
 ---
 
@@ -334,6 +356,122 @@ Point your office router's DNS to the Cloudflare addresses.
 | Application | in | Netflix, YouTube, Spotify |
 
 4. **Action:** Block
+
+---
+
+## Step 11: Advanced DNS Features (TOR Compliance)
+
+### 11.1 Policy with Regular Expressions (TOR 5.1.2.6)
+
+Block domains matching a pattern:
+
+1. Click **"Add a policy"**
+2. **Name:** `Block Suspicious TLDs`
+3. Configure:
+
+| Selector | Operator | Value |
+|----------|----------|-------|
+| Domain | matches regex | `.*\.(xyz|top|club|work|loan)$` |
+
+4. **Action:** Block
+
+### 11.2 Policy by Geolocation (TOR 5.1.2.8)
+
+Block DNS queries from specific countries:
+
+1. Click **"Add a policy"**
+2. **Name:** `Block High-Risk Countries`
+3. Configure:
+
+| Selector | Operator | Value |
+|----------|----------|-------|
+| Source Country | in | [Select countries] |
+
+4. **Action:** Block
+
+### 11.3 Policy by User Identity (TOR 5.1.2.9)
+
+Create user-specific policies:
+
+1. Click **"Add a policy"**
+2. **Name:** `Allow Social Media for Marketing`
+3. Configure:
+
+| Selector | Operator | Value |
+|----------|----------|-------|
+| User Email | in | marketing@company.com |
+| AND | | |
+| Application | in | Facebook, Instagram, LinkedIn |
+
+4. **Action:** Allow
+
+### 11.4 Filter by DNS Record Type (TOR 5.1.2.13)
+
+Block specific DNS record types:
+
+1. Click **"Add a policy"**
+2. **Name:** `Block TXT Record Queries`
+3. Configure:
+
+| Selector | Operator | Value |
+|----------|----------|-------|
+| Query Record Type | is | TXT |
+
+4. **Action:** Block
+
+**Available Record Types:**
+- A (IPv4 address)
+- AAAA (IPv6 address)
+- CNAME (Canonical name)
+- MX (Mail exchange)
+- TXT (Text record)
+- PTR (Pointer record)
+- NS (Name server)
+- SRV (Service record)
+
+### 11.5 Configure DNSSEC Validation (TOR 5.1.2.12)
+
+1. Go to **Settings** > **Network**
+2. Find **DNSSEC** section
+3. Enable **DNSSEC validation**
+
+> **Warning:** Disabling DNSSEC validation may expose users to DNS spoofing attacks.
+
+### 11.6 Security Categories (TOR 5.1.2.7)
+
+Create policy blocking all required security categories:
+
+| Selector | Operator | Value |
+|----------|----------|-------|
+| Security Categories | in | (select all below) |
+
+**Required Categories per TOR:**
+- ✅ Anonymizer (5.1.2.7.1)
+- ✅ Malware (5.1.2.7.2)
+- ✅ Phishing (5.1.2.7.3)
+- ✅ Command and Control & Botnet (5.1.2.7.4)
+- ✅ Brand Embedding (5.1.2.7.5) - *Brand Impersonation*
+- ✅ DGA Domains (5.1.2.7.6)
+- ✅ Newly Seen Domains (5.1.2.7.9)
+
+**Content Categories:**
+- ✅ Adult Themes (5.1.2.7.7)
+- ✅ Login Screens (5.1.2.7.8)
+
+### 11.7 DNS Override Action (TOR 5.1.2.3)
+
+Redirect a domain to a different IP:
+
+1. Click **"Add a policy"**
+2. **Name:** `Override Internal Domain`
+3. Configure:
+
+| Selector | Operator | Value |
+|----------|----------|-------|
+| Domain | is | internal.company.com |
+
+4. **Action:** Override
+5. **Override with:** 10.0.0.100
 
 ---
 
