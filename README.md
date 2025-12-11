@@ -12,10 +12,19 @@ A comprehensive hands-on workshop for implementing Cloudflare Zero Trust securit
 | Expensive licensing | **Free tier for up to 50 users** |
 | Slow user experience | **Faster than direct internet** |
 
+## Quick Start (30 minutes)
+
+**Want protection NOW?** Start here: [Quick Start Guide](./docs/00-quick-start.md)
+
+Get basic DNS filtering, HTTP protection, and AV scanning in 30 minutes.
+
+---
+
 ## Workshop Overview
 
 | Module | Topic | Duration | Features |
 |--------|-------|----------|----------|
+| 00 | [Quick Start](./docs/00-quick-start.md) | 30 min | Immediate basic protection |
 | 01 | [Prerequisites & Setup](./docs/01-prerequisites.md) | 30 min | Account setup, WARP client |
 | 02 | [DNS Filtering](./docs/02-dns-filtering.md) | 45 min | DNS policies, content categories |
 | 03 | [Secure Web Gateway](./docs/03-secure-web-gateway.md) | 60 min | HTTP policies, TLS inspection |
@@ -24,8 +33,10 @@ A comprehensive hands-on workshop for implementing Cloudflare Zero Trust securit
 | 06 | [CASB](./docs/06-casb.md) | 45 min | SaaS security, shadow IT detection |
 | 07 | [Zero Trust Network Access](./docs/07-ztna.md) | 60 min | Access policies, private applications |
 | 08 | [Workshop Summary](./docs/08-workshop-summary.md) | 15 min | Review, next steps, resources |
+| 09 | [Logs & Analytics](./docs/09-logs-analytics.md) | 30 min | Monitoring, alerts, SIEM integration |
+| 10 | [Device Posture](./docs/10-device-posture.md) | 30 min | Device security, WARP settings |
 
-**Total Duration:** ~6 hours
+**Total Duration:** ~7 hours (or 30 min for Quick Start)
 
 ## What You Will Learn
 
@@ -38,6 +49,8 @@ A comprehensive hands-on workshop for implementing Cloudflare Zero Trust securit
 - Implement Data Loss Prevention (DLP) policies
 - Integrate CASB for SaaS application security
 - Configure Zero Trust Network Access (ZTNA) for private applications
+- Monitor with logs, analytics, and alerts
+- Enforce device posture and compliance
 
 ## Prerequisites
 
