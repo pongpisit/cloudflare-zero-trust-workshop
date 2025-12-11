@@ -1,6 +1,16 @@
 # Cloudflare Zero Trust Workshop
 
-A comprehensive hands-on workshop for implementing Cloudflare Zero Trust security features.
+A comprehensive hands-on workshop for implementing Cloudflare Zero Trust security features. Experience how easy it is to deploy enterprise-grade security with the world's most connected cloud platform.
+
+## Why Cloudflare Zero Trust?
+
+| Traditional Security | Cloudflare Zero Trust |
+|---------------------|----------------------|
+| Multiple vendors & consoles | **Single unified platform** |
+| Complex deployment (weeks) | **Deploy in under 1 hour** |
+| Traffic backhauled to data centers | **Security at 330+ edge locations** |
+| Expensive licensing | **Free tier for up to 50 users** |
+| Slow user experience | **Faster than direct internet** |
 
 ## Workshop Overview
 
@@ -13,8 +23,9 @@ A comprehensive hands-on workshop for implementing Cloudflare Zero Trust securit
 | 05 | [Data Loss Prevention](./docs/05-dlp.md) | 45 min | DLP profiles, sensitive data detection |
 | 06 | [CASB](./docs/06-casb.md) | 45 min | SaaS security, shadow IT detection |
 | 07 | [Zero Trust Network Access](./docs/07-ztna.md) | 60 min | Access policies, private applications |
+| 08 | [Workshop Summary](./docs/08-workshop-summary.md) | 15 min | Review, next steps, resources |
 
-**Total Duration:** ~5.5 hours
+**Total Duration:** ~6 hours
 
 ## What You Will Learn
 
@@ -108,6 +119,23 @@ A comprehensive hands-on workshop for implementing Cloudflare Zero Trust securit
 
 - **Community Forum:** https://community.cloudflare.com
 - **Discord:** https://discord.cloudflare.com
+
+---
+
+## After This Workshop
+
+By completing this workshop, your organization will have:
+
+| Protection Layer | Status |
+|-----------------|--------|
+| DNS Filtering | Blocking malicious domains |
+| Web Gateway | Inspecting all HTTP/HTTPS traffic |
+| Anti-Virus | Scanning files in real-time |
+| DLP | Protecting sensitive data |
+| CASB | Securing SaaS applications |
+| ZTNA | Zero Trust access to private apps |
+
+**All managed from a single dashboard, powered by the world's largest network.**
 
 ---
 

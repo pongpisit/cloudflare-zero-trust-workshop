@@ -42,9 +42,10 @@
 
 **Go to:** Zero Trust Dashboard > Gateway > Firewall Policies > DNS
 
-```
-https://one.dash.cloudflare.com/ > Gateway > Firewall Policies > DNS
-```
+1. Open https://one.dash.cloudflare.com/
+2. In the left sidebar, click **Gateway**
+3. Click **Firewall Policies**
+4. Select the **DNS** tab
 
 You will see the DNS policies page where you can create and manage policies.
 

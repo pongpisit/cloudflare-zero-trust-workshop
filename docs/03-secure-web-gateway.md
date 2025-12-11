@@ -54,6 +54,10 @@
 
 **Go to:** Settings > Network
 
+1. Open https://one.dash.cloudflare.com/
+2. In the left sidebar, click **Settings**
+3. Click **Network**
+
 ### 1.2 Enable Proxy
 
 Turn on:
@@ -107,6 +111,11 @@ Block access to security threats at the HTTP level.
 ### 3.1 Access HTTP Policies
 
 **Go to:** Gateway > Firewall Policies > HTTP
+
+1. Open https://one.dash.cloudflare.com/
+2. In the left sidebar, click **Gateway**
+3. Click **Firewall Policies**
+4. Select the **HTTP** tab
 
 ### 3.2 Add New Policy
 
