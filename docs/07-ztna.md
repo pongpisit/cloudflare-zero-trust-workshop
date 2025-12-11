@@ -590,9 +590,17 @@ cloudflared tunnel --loglevel debug run my-tunnel
 
 ---
 
-## Workshop Complete!
+## Next Module
 
-Congratulations! You have completed the Cloudflare Zero Trust Workshop!
+You have configured Zero Trust Network Access!
+
+**Next:** [Module 08: Logs & Analytics](./08-logs-analytics.md)
+
+In the next module, you will learn how to monitor and troubleshoot your Zero Trust deployment.
+
+---
+
+## Workshop Almost Complete!
 
 ## What You Built
 
@@ -603,7 +611,7 @@ Congratulations! You have completed the Cloudflare Zero Trust Workshop!
 | 03 | Secure Web Gateway & HTTP policies |
 | 04 | Anti-virus & malware protection |
 | 05 | Data Loss Prevention |
-| 06 | CASB & SaaS security |
+| 06 | Device Posture & WARP settings |
 | 07 | Zero Trust Network Access |
 
 ## Next Steps

@@ -1,4 +1,4 @@
-# Module 10: Device Posture & WARP Settings
+# Module 06: Device Posture & WARP Settings
 
 **Duration:** 30 minutes
 
@@ -461,10 +461,10 @@ Before enforcing posture:
 
 ---
 
-## Next Steps
+## Next Module
 
 You now have complete device posture and WARP configuration!
 
-Continue with:
-- [Module 08: Workshop Summary](./08-workshop-summary.md) - Review & next steps
-- [Module 09: Logs & Analytics](./09-logs-analytics.md) - Monitoring
+**Next:** [Module 07: Zero Trust Network Access](./07-ztna.md)
+
+In the next module, you will set up ZTNA to provide secure access to private applications.

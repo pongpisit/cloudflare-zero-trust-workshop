@@ -491,6 +491,6 @@ Export DLP data for compliance reporting.
 
 You have configured Data Loss Prevention to protect sensitive data!
 
-**Next:** [Module 06: CASB](./06-casb.md)
+**Next:** [Module 06: Device Posture](./06-device-posture.md)
 
-In the next module, you will set up CASB to secure your SaaS applications.
+In the next module, you will configure device posture checks to ensure device security.

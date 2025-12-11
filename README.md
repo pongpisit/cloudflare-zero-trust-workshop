@@ -22,6 +22,8 @@ Get basic DNS filtering, HTTP protection, and AV scanning in 30 minutes.
 
 ## Workshop Overview
 
+### Core Modules
+
 | Module | Topic | Duration | Features |
 |--------|-------|----------|----------|
 | 00 | [Quick Start](./docs/00-quick-start.md) | 30 min | Immediate basic protection |
@@ -30,13 +32,20 @@ Get basic DNS filtering, HTTP protection, and AV scanning in 30 minutes.
 | 03 | [Secure Web Gateway](./docs/03-secure-web-gateway.md) | 60 min | HTTP policies, TLS inspection |
 | 04 | [Anti-Virus & File Scanning](./docs/04-antivirus-scanning.md) | 30 min | Malware protection, file scanning |
 | 05 | [Data Loss Prevention](./docs/05-dlp.md) | 45 min | DLP profiles, sensitive data detection |
-| 06 | [CASB](./docs/06-casb.md) | 45 min | SaaS security, shadow IT detection |
+| 06 | [Device Posture](./docs/06-device-posture.md) | 30 min | Device security, WARP settings |
 | 07 | [Zero Trust Network Access](./docs/07-ztna.md) | 60 min | Access policies, private applications |
-| 08 | [Workshop Summary](./docs/08-workshop-summary.md) | 15 min | Review, next steps, resources |
-| 09 | [Logs & Analytics](./docs/09-logs-analytics.md) | 30 min | Monitoring, alerts, SIEM integration |
-| 10 | [Device Posture](./docs/10-device-posture.md) | 30 min | Device security, WARP settings |
+| 08 | [Logs & Analytics](./docs/08-logs-analytics.md) | 30 min | Monitoring, alerts, SIEM integration |
+| 09 | [Workshop Summary](./docs/09-workshop-summary.md) | 15 min | Review, next steps, resources |
 
-**Total Duration:** ~7 hours (or 30 min for Quick Start)
+**Core Duration:** ~6 hours (or 30 min for Quick Start)
+
+### Optional Modules
+
+| Module | Topic | Duration | Features |
+|--------|-------|----------|----------|
+| 11 | [CASB (Optional)](./docs/11-casb-optional.md) | 45 min | SaaS security, shadow IT (requires integration) |
+
+> **Note:** CASB module requires API integration with SaaS applications (Microsoft 365, Google Workspace, etc.). Skip if you don't have these integrations available.
 
 ## What You Will Learn
 

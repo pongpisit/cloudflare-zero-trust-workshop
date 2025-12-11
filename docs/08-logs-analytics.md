@@ -1,4 +1,4 @@
-# Module 09: Logs, Analytics & Monitoring
+# Module 08: Logs, Analytics & Monitoring
 
 **Duration:** 30 minutes
 
@@ -439,10 +439,10 @@ Export key metrics to your monitoring tools:
 
 ---
 
-## Next Steps
+## Next Module
 
 You now have complete visibility into your Zero Trust deployment!
 
-Continue with:
-- [Module 10: Device Posture](./10-device-posture.md) - Ensure device security
-- [Module 08: Workshop Summary](./08-workshop-summary.md) - Review & next steps
+**Next:** [Module 09: Workshop Summary](./09-workshop-summary.md)
+
+Review what you've built and learn about next steps.

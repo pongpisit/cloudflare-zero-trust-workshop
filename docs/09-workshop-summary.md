@@ -1,4 +1,4 @@
-# Workshop Summary: Cloudflare Zero Trust - Complete Security Platform
+# Module 09: Workshop Summary - Cloudflare Zero Trust Complete Security Platform
 
 ## What You Have Built
 
@@ -50,8 +50,9 @@ Congratulations! You have successfully configured a complete Zero Trust security
 | **Web Gateway** | Module 03 | Inspect and filter HTTP/HTTPS traffic |
 | **Malware Protection** | Module 04 | Scan files for viruses and threats |
 | **Data Protection** | Module 05 | Prevent sensitive data leakage |
-| **SaaS Security** | Module 06 | Secure cloud applications |
+| **Device Security** | Module 06 | Ensure device compliance |
 | **Access Control** | Module 07 | Zero Trust access to private apps |
+| **Monitoring** | Module 08 | Logs, analytics, and alerts |
 
 ---
 

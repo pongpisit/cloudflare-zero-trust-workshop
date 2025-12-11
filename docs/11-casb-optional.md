@@ -1,4 +1,6 @@
-# Module 06: CASB (Cloud Access Security Broker)
+# Module 11 (Optional): CASB (Cloud Access Security Broker)
+
+> **Note:** This module is optional and requires API integration with SaaS applications like Microsoft 365 or Google Workspace. Skip this module if you don't have these integrations available.
 
 **Duration:** 45 minutes
 
@@ -480,10 +482,10 @@ Some integrations support automated remediation:
 
 ---
 
-## Next Module
+## Next Steps
 
 You have configured CASB to secure your SaaS applications!
 
-**Next:** [Module 07: Zero Trust Network Access](./07-ztna.md)
+**Return to:** [Workshop Summary](./09-workshop-summary.md)
 
-In the next module, you will set up ZTNA to provide secure access to private applications.
+Or continue with other modules you may have skipped.
