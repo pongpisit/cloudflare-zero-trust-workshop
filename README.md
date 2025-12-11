@@ -24,19 +24,19 @@ Get basic DNS filtering, HTTP protection, and AV scanning in 30 minutes.
 
 ### Core Modules
 
-| Module | Topic | Duration | TOR Reference |
-|--------|-------|----------|---------------|
-| 00 | [Quick Start](./docs/00-quick-start.md) | 30 min | - |
-| 01 | [Prerequisites & Setup](./docs/01-prerequisites.md) | 30 min | 5.1.1 |
-| 02 | [DNS Filtering](./docs/02-dns-filtering.md) | 45 min | 5.1.2 |
-| 03 | [Secure Web Gateway](./docs/03-secure-web-gateway.md) | 60 min | - |
-| 04 | [Anti-Virus & File Scanning](./docs/04-antivirus-scanning.md) | 30 min | - |
-| 05 | [Data Loss Prevention](./docs/05-dlp.md) | 45 min | - |
-| 06 | [Device Posture](./docs/06-device-posture.md) | 30 min | - |
-| 07 | [Zero Trust Network Access](./docs/07-ztna.md) | 60 min | 5.1.1.5 |
-| 08 | [Logs & Analytics](./docs/08-logs-analytics.md) | 30 min | 5.3 |
-| 09 | [Workshop Summary](./docs/09-workshop-summary.md) | 15 min | - |
-| 10 | [Browser Isolation](./docs/10-browser-isolation.md) | 30 min | 5.2 |
+| Module | Topic | Duration | Features |
+|--------|-------|----------|----------|
+| 00 | [Quick Start](./docs/00-quick-start.md) | 30 min | Immediate basic protection |
+| 01 | [Prerequisites & Setup](./docs/01-prerequisites.md) | 30 min | Account setup, WARP client |
+| 02 | [DNS Filtering](./docs/02-dns-filtering.md) | 45 min | DNS policies, content categories |
+| 03 | [Secure Web Gateway](./docs/03-secure-web-gateway.md) | 60 min | HTTP policies, TLS inspection |
+| 04 | [Anti-Virus & File Scanning](./docs/04-antivirus-scanning.md) | 30 min | Malware protection |
+| 05 | [Data Loss Prevention](./docs/05-dlp.md) | 45 min | Sensitive data detection |
+| 06 | [Device Posture](./docs/06-device-posture.md) | 30 min | Device security, WARP settings |
+| 07 | [Zero Trust Network Access](./docs/07-ztna.md) | 60 min | Access policies, private apps |
+| 08 | [Logs & Analytics](./docs/08-logs-analytics.md) | 30 min | Monitoring, alerts, 90-day retention |
+| 09 | [Workshop Summary](./docs/09-workshop-summary.md) | 15 min | Review, next steps |
+| 10 | [Browser Isolation](./docs/10-browser-isolation.md) | 30 min | Clientless web isolation |
 
 **Core Duration:** ~7 hours (or 30 min for Quick Start)
 
@@ -47,19 +47,6 @@ Get basic DNS filtering, HTTP protection, and AV scanning in 30 minutes.
 | 11 | [CASB (Optional)](./docs/11-casb-optional.md) | 45 min | SaaS security, shadow IT (requires integration) |
 
 > **Note:** CASB module requires API integration with SaaS applications (Microsoft 365, Google Workspace, etc.). Skip if you don't have these integrations available.
-
----
-
-## TOR Compliance Summary
-
-This workshop aligns with the following TOR requirements:
-
-| TOR Section | Feature | Module |
-|-------------|---------|--------|
-| **5.1.1** | Architecture & Infrastructure | 01, 07 |
-| **5.1.2** | DNS Filtering & Policies | 02 |
-| **5.2** | Clientless Web Isolation | 10 |
-| **5.3** | Logging & Reporting (90 days) | 08 |
 
 ## What You Will Learn
 

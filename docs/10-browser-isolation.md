@@ -13,25 +13,6 @@
 
 ---
 
-## TOR Compliance Highlights
-
-This module covers the following TOR requirements:
-
-| TOR | Feature | Status |
-|-----|---------|--------|
-| 5.2.1 | Clientless Web Isolation license | ✅ |
-| 5.2.2 | No agent required | ✅ |
-| 5.2.3 | Support Chrome, Edge, Firefox, Safari | ✅ |
-| 5.2.4 | Permissions and Access Policies | ✅ |
-| 5.2.5 | Authentication via Email OTP, IdP, SAML | ✅ |
-| 5.2.6 | Disable Copy, Paste, Print, Keyboard | ✅ |
-| 5.2.7 | Address bar in isolation | ✅ |
-| 5.2.8 | DNS resolver for internal hostnames | ✅ |
-| 5.2.9 | Access internal servers via Secure Tunnel | ✅ |
-| 5.2.10 | Multi-language keyboard support | ✅ |
-
----
-
 ## How Browser Isolation Works
 
 ```
@@ -122,7 +103,7 @@ Control who can use Clientless Web Isolation.
 - **Application domain:** `<team-name>.cloudflareaccess.com`
 - **Path:** `/browser`
 
-### 3.3 Create Access Policy (TOR 5.2.4, 5.2.5)
+### 3.3 Create Access Policy
 
 1. **Policy name:** `Allow Authenticated Users`
 2. **Action:** Allow
@@ -138,7 +119,7 @@ Control who can use Clientless Web Isolation.
 |----------|----------|-------|
 | Login Methods | is | One-time PIN |
 
-**Supported Authentication Methods (TOR 5.2.5):**
+**Supported Authentication Methods:**
 - ✅ Email OTP (One-time PIN)
 - ✅ Microsoft (Azure AD)
 - ✅ Google Workspace
@@ -148,7 +129,7 @@ Control who can use Clientless Web Isolation.
 
 ---
 
-## Step 4: Configure Browser Permissions (TOR 5.2.6)
+## Step 4: Configure Browser Permissions
 
 Control what users can do in isolated browser.
 
@@ -211,7 +192,7 @@ Try the following:
 - **Print page** - Should be blocked if disabled
 - **Type text** - Should work (keyboard enabled)
 
-### 5.5 Test Multi-Language Keyboard (TOR 5.2.10)
+### 5.5 Test Multi-Language Keyboard
 
 1. In isolated browser, go to a text input field
 2. Switch keyboard language:
@@ -224,7 +205,7 @@ Try the following:
 
 ---
 
-## Step 6: Access Internal Applications (TOR 5.2.8, 5.2.9)
+## Step 6: Access Internal Applications
 
 Access internal servers through Browser Isolation.
 

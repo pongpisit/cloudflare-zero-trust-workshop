@@ -9,18 +9,8 @@
 - Understand Analytics dashboards
 - Set up notifications and alerts
 - Export logs for SIEM integration
-- Configure log retention (TOR 5.3.1: 90 days)
+- Configure log retention (90 days)
 - Troubleshoot common issues using logs
-
----
-
-## TOR Compliance Highlights
-
-This module covers the following TOR requirements:
-
-| TOR | Feature | Status |
-|-----|---------|--------|
-| 5.3.1 | Log retention at least 90 days in Cloud Storage | ✅ |
 
 ---
 
@@ -335,7 +325,7 @@ For continuous log export to SIEM:
 
 ---
 
-## Step 9: Log Retention (TOR 5.3.1)
+## Step 9: Log Retention
 
 ### 9.1 Default Retention
 
@@ -345,9 +335,9 @@ For continuous log export to SIEM:
 | Gateway HTTP | 24 hours | 30 days |
 | Access | 24 hours | 30 days |
 
-### 9.2 Extended Retention to 90 Days (TOR Requirement)
+### 9.2 Extended Retention to 90 Days
 
-**TOR 5.3.1 requires at least 90 days of log retention.**
+**Best practice: Retain logs for at least 90 days for compliance and forensics.**
 
 To achieve 90-day retention, use **Logpush** to export logs to cloud storage:
 

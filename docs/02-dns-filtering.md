@@ -6,32 +6,13 @@
 
 - Understand how DNS filtering works
 - Create DNS policies to block threats
-- Filter content by category (TOR 5.1.2.7)
+- Filter content by category
 - Enable Safe Search and YouTube Restricted Mode
-- Use advanced selectors: Source IP, Domain, User Identity (TOR 5.1.2.4)
-- Use comparison and logical operators (TOR 5.1.2.5)
-- Configure DNSSEC validation (TOR 5.1.2.12)
-- Filter by DNS Record Type (TOR 5.1.2.13)
+- Use advanced selectors: Source IP, Domain, User Identity
+- Use comparison and logical operators
+- Configure DNSSEC validation
+- Filter by DNS Record Type
 - Test DNS filtering
-
----
-
-## TOR Compliance Highlights
-
-This module covers the following TOR requirements:
-
-| TOR | Feature | Status |
-|-----|---------|--------|
-| 5.1.2.2 | Policy by Source IP, Domain, Host, Application | ✅ |
-| 5.1.2.3 | Actions: Allow, Block, Override, Safe Search | ✅ |
-| 5.1.2.4 | Selectors: Domain, Content/Security Categories, User Identity | ✅ |
-| 5.1.2.5 | Operators: is, in, and, or | ✅ |
-| 5.1.2.6 | Regular Expressions | ✅ |
-| 5.1.2.7 | Security Categories (Malware, Phishing, C2, DGA, etc.) | ✅ |
-| 5.1.2.8 | Geolocation-based policies | ✅ |
-| 5.1.2.11 | CIPA filter for child protection | ✅ |
-| 5.1.2.12 | DNSSEC validation | ✅ |
-| 5.1.2.13 | Filter by DNS Record Type | ✅ |
 
 ---
 
@@ -359,9 +340,9 @@ Point your office router's DNS to the Cloudflare addresses.
 
 ---
 
-## Step 11: Advanced DNS Features (TOR Compliance)
+## Step 11: Advanced DNS Features
 
-### 11.1 Policy with Regular Expressions (TOR 5.1.2.6)
+### 11.1 Policy with Regular Expressions
 
 Block domains matching a pattern:
 
@@ -375,7 +356,7 @@ Block domains matching a pattern:
 
 4. **Action:** Block
 
-### 11.2 Policy by Geolocation (TOR 5.1.2.8)
+### 11.2 Policy by Geolocation
 
 Block DNS queries from specific countries:
 
@@ -389,7 +370,7 @@ Block DNS queries from specific countries:
 
 4. **Action:** Block
 
-### 11.3 Policy by User Identity (TOR 5.1.2.9)
+### 11.3 Policy by User Identity
 
 Create user-specific policies:
 
@@ -405,7 +386,7 @@ Create user-specific policies:
 
 4. **Action:** Allow
 
-### 11.4 Filter by DNS Record Type (TOR 5.1.2.13)
+### 11.4 Filter by DNS Record Type
 
 Block specific DNS record types:
 
@@ -429,7 +410,7 @@ Block specific DNS record types:
 - NS (Name server)
 - SRV (Service record)
 
-### 11.5 Configure DNSSEC Validation (TOR 5.1.2.12)
+### 11.5 Configure DNSSEC Validation
 
 1. Go to **Settings** > **Network**
 2. Find **DNSSEC** section
@@ -437,28 +418,28 @@ Block specific DNS record types:
 
 > **Warning:** Disabling DNSSEC validation may expose users to DNS spoofing attacks.
 
-### 11.6 Security Categories (TOR 5.1.2.7)
+### 11.6 Security Categories
 
-Create policy blocking all required security categories:
+Create policy blocking all security categories:
 
 | Selector | Operator | Value |
 |----------|----------|-------|
 | Security Categories | in | (select all below) |
 
-**Required Categories per TOR:**
-- ✅ Anonymizer (5.1.2.7.1)
-- ✅ Malware (5.1.2.7.2)
-- ✅ Phishing (5.1.2.7.3)
-- ✅ Command and Control & Botnet (5.1.2.7.4)
-- ✅ Brand Embedding (5.1.2.7.5) - *Brand Impersonation*
-- ✅ DGA Domains (5.1.2.7.6)
-- ✅ Newly Seen Domains (5.1.2.7.9)
+**Recommended Security Categories:**
+- Anonymizer
+- Malware
+- Phishing
+- Command and Control & Botnet
+- Brand Impersonation
+- DGA Domains
+- Newly Seen Domains
 
 **Content Categories:**
-- ✅ Adult Themes (5.1.2.7.7)
-- ✅ Login Screens (5.1.2.7.8)
+- Adult Themes
+- Login Screens
 
-### 11.7 DNS Override Action (TOR 5.1.2.3)
+### 11.7 DNS Override Action
 
 Redirect a domain to a different IP:
 
