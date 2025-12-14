@@ -458,13 +458,18 @@ Export key metrics to your monitoring tools:
 
 ### Log Locations
 
-| Log Type | Path |
-|----------|------|
-| DNS | Insights > Logs (DNS tab) |
-| HTTP | Insights > Logs (HTTP tab) |
-| Network | Insights > Logs (Network tab) |
-| Access | Insights > Logs (Access tab) |
-| Posture | Insights > Logs (Posture logs tab) |
+**Go to:** Insights > Logs
+
+| Log Type | Description | Dataset |
+|----------|-------------|--------|
+| **Admin activity logs** | Monitor when a member creates, updates, or deletes configurations | Audit logs |
+| **Access authentication logs** | Review login attempts to applications protected by Access | Access, Applications |
+| **DNS query logs** | Review DNS queries inspected by Gateway | Gateway, DNS policies |
+| **Network logs** | Review network traffic inspected by Gateway | Gateway, Network policies |
+| **HTTP request logs** | Review HTTP requests inspected by Gateway | Gateway, HTTP logs |
+| **SSH command logs** | Review SSH commands a user ran on a target | Access, Applications |
+| **SCIM provisioning logs** | Monitor identity exchange between Access and IdPs (90 days retention) | Access, SCIM |
+| **Posture logs** | Monitor device posture check results - failed checks may signal unmanaged/unhealthy devices | WARP, Devices |
 
 ### Common Filters
 
