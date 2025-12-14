@@ -322,24 +322,16 @@ For each application, see:
 
 ---
 
-## Step 9: Create CASB Alerts
+## Step 9: Remediation Workflows
 
-Get notified of new security findings.
-
-Skip this section if Notifications are not available in your plan/UI.
-
----
-
-## Step 10: Remediation Workflows
-
-### 10.1 Manual Remediation
+### 9.1 Manual Remediation
 
 1. Review finding in CASB
 2. Click link to SaaS admin console
 3. Make necessary changes
 4. Return to CASB and verify
 
-### 10.2 Bulk Actions
+### 9.2 Bulk Actions
 
 For multiple similar findings:
 1. Select multiple findings
@@ -349,7 +341,7 @@ For multiple similar findings:
    - Export to CSV
    - Create policy
 
-### 10.3 Automated Remediation (Future)
+### 9.3 Automated Remediation (Future)
 
 Some integrations support automated remediation:
 - Revoke file sharing
@@ -360,26 +352,26 @@ Some integrations support automated remediation:
 
 ## Best Practices
 
-### 10.1 Regular Reviews
+### 9.4 Regular Reviews
 
 - Review critical findings daily
 - Review high findings weekly
 - Full review monthly
 
-### 10.2 Prioritize Remediation
+### 9.5 Prioritize Remediation
 
 1. Critical findings first
 2. High-risk users (admins, executives)
 3. Publicly shared sensitive data
 4. Configuration weaknesses
 
-### 10.3 Document Exceptions
+### 9.6 Document Exceptions
 
 - Document accepted risks
 - Review exceptions quarterly
 - Remove stale exceptions
 
-### 10.4 Integrate with Workflows
+### 9.7 Integrate with Workflows
 
 - Export findings to ticketing system
 - Create remediation SLAs
@@ -468,10 +460,8 @@ Some integrations support automated remediation:
 
 ---
 
-## Next Steps
+## Workshop Complete!
 
-You have configured CASB to secure your SaaS applications!
+Congratulations! You have completed all modules of the Cloudflare Zero Trust Workshop!
 
 **Return to:** [Workshop Summary](./09-workshop-summary.md)
-
-Or continue with other modules you may have skipped.

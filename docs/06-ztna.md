@@ -506,52 +506,7 @@ Requires WARP client for TCP access.
 
 You have configured Zero Trust Network Access!
 
-**Next:** [Module 08: Logs & Analytics](./08-logs-analytics.md)
+**Next:** [Module 07: Browser Isolation](./07-browser-isolation.md)
 
-In the next module, you will learn how to monitor and troubleshoot your Zero Trust deployment.
+In the next module, you will learn how to use Browser Isolation for secure web browsing.
 
----
-
-## Workshop Almost Complete!
-
-## What You Built
-
-| Module | Feature |
-|--------|---------|
-| 01 | Zero Trust organization & WARP client |
-| 02 | DNS filtering & content control |
-| 03 | Secure Web Gateway & HTTP policies |
-| 04 | Anti-virus & malware protection |
-| 05 | Data Loss Prevention |
-| 06 | Device Posture & WARP settings |
-| 07 | Zero Trust Network Access |
-
-## Next Steps
-
-1. **Production Deployment**
-   - Roll out WARP to all devices
-   - Create comprehensive policies
-   - Integrate with identity providers
-
-2. **Advanced Features**
-   - Browser Isolation
-   - Email Security
-   - Digital Experience Monitoring (DEX)
-
-3. **Monitoring & Optimization**
-   - Review logs regularly
-   - Tune policies based on findings
-   - Set up alerts and notifications
-
-## Resources
-
-- **Documentation:** https://developers.cloudflare.com/cloudflare-one/
-- **Learning Paths:** https://developers.cloudflare.com/learning-paths/
-- **Community:** https://community.cloudflare.com
-- **Support:** https://support.cloudflare.com
-
----
-
-**Thank you for completing this workshop!**
-
-**Workshop Repository:** https://github.com/pongpisit/cloudflare-zero-trust-workshop

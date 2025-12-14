@@ -424,8 +424,8 @@ https://<team-name>.cloudflareaccess.com/browser
 
 ## Next Module
 
-You have configured Clientless Web Isolation for secure browsing!
+You have configured Browser Isolation for secure browsing!
 
-**Return to:** [Module 09: Workshop Summary](./09-workshop-summary.md)
+**Next:** [Module 08: Logs & Analytics](./08-logs-analytics.md)
 
-Or explore other modules you may have skipped.
+In the next module, you will learn how to monitor and troubleshoot your Zero Trust deployment.
