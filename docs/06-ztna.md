@@ -66,7 +66,44 @@
 Before configuring ZTNA:
 - Zero Trust organization set up (Module 01)
 - Authentication configured (Module 01)
-- Access to a private application or server
+- Access to a private application or server (Ubuntu VM provided for this lab)
+
+---
+
+## Lab Setup: Install Netdata on Ubuntu
+
+For this workshop, we provide an Ubuntu server. Install **Netdata** as a sample application to expose via ZTNA.
+
+### Install Netdata
+
+Run this command on your Ubuntu server:
+
+```bash
+wget -O /tmp/netdata-kickstart.sh https://get.netdata.cloud/kickstart.sh && sh /tmp/netdata-kickstart.sh
+```
+
+**What this does:**
+- Downloads and installs Netdata monitoring agent
+- Starts Netdata service automatically
+- Exposes a web dashboard on **port 19999**
+
+### Verify Netdata is Running
+
+```bash
+sudo systemctl status netdata
+```
+
+You should see: `Active: active (running)`
+
+### Test Local Access
+
+```bash
+curl http://localhost:19999
+```
+
+You should see HTML content from the Netdata dashboard.
+
+> **Note:** Netdata runs on `http://localhost:19999` by default. We will expose this via Cloudflare Tunnel so it can be accessed securely from anywhere.
 
 ---
 
@@ -122,9 +159,9 @@ Once installed, your connector should show:
 
 ---
 
-## Step 2: Add Public Hostname (Route Traffic)
+## Step 2: Add Public Hostname for Netdata
 
-After the connector is running, configure where traffic should go.
+After the connector is running, configure where traffic should go. We will expose the Netdata dashboard.
 
 ### 2.1 Add Public Hostname
 
@@ -133,17 +170,19 @@ In the tunnel configuration wizard (or click on your tunnel later):
 1. Go to **"Public Hostname"** tab
 2. Click **"Add a public hostname"**
 
-### 2.2 Configure Hostname
+### 2.2 Configure Hostname for Netdata
 
-| Field | Value | Example |
-|-------|-------|--------|
-| **Subdomain** | Your app subdomain | `app` |
-| **Domain** | Select from your domains | `yourdomain.com` |
-| **Path** | (Optional) Specific path | Leave empty |
-| **Type** | Protocol type | `HTTP` |
-| **URL** | Internal service address | `localhost:8080` |
+| Field | Value | Description |
+|-------|-------|-------------|
+| **Subdomain** | `netdata` | Your app subdomain |
+| **Domain** | Select your domain | e.g., `yourdomain.com` |
+| **Path** | Leave empty | No specific path needed |
+| **Type** | `HTTP` | Netdata uses HTTP |
+| **URL** | `localhost:19999` | Netdata's default port |
 
 3. Click **"Save hostname"**
+
+Your Netdata will be accessible at: `https://netdata.yourdomain.com`
 
 ### 2.3 Common Service Types
 
@@ -158,6 +197,7 @@ In the tunnel configuration wizard (or click on your tunnel later):
 ### 2.4 Add Multiple Hostnames
 
 Repeat the process to add more applications:
+- `netdata.yourdomain.com` → `localhost:19999` (Netdata dashboard)
 - `api.yourdomain.com` → `http://localhost:3000`
 - `admin.yourdomain.com` → `http://192.168.1.100:80`
 
