@@ -245,7 +245,7 @@ To enable TLS inspection and HTTP filtering, install the Cloudflare root certifi
 
 ### 8.1 Download Certificate
 
-**Go to:** Settings > Resources > Certificates
+**Go to:** Traffic policies > Traffic settings
 
 Or download directly from:
 ```
@@ -331,7 +331,7 @@ https://developers.cloudflare.com/cloudflare-one/connections/connect-devices/war
 | Device List | Team & Resources > Devices |
 | Identity Providers | Integrations > Identity providers |
 | Enrollment Rules | Team & Resources > Devices (Device enrollment tab) |
-| Certificates | Settings > Resources > Certificates |
+| Certificates | Traffic policies > Traffic settings |
 
 ---
 
