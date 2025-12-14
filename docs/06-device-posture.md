@@ -229,7 +229,7 @@ Add these to **Exclude** list for compatibility:
 
 ### 6.1 Access Block Page Settings
 
-1. Go to **Settings** > **Custom Pages**
+1. Go to **Reusable components** > **Custom pages**
 2. Click **Gateway block page**
 
 ### 6.2 Customize Block Page
