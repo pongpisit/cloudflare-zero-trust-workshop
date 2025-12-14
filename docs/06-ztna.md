@@ -357,13 +357,13 @@ Access entire private networks, not just specific apps.
 
 ### 9.1 Configure Private Network
 
-**Go to:** Networks > Connectors > Your Tunnel
+**Go to:** Networks > Routes
 
-![Networks > Connectors > Your Tunnel](./screenshots/auto/nav-networks-connectors.png)
+![Private Network Routes](./screenshots/auto/private-network-routes.png)
 
-1. Go to **"Private Network"** tab
-2. Click **"Add a private network"**
-3. Enter CIDR range: `192.168.1.0/24`
+1. Click **"Add a route"** or go to your tunnel's **"Private Network"** tab
+2. Enter CIDR range: `192.168.1.0/24`
+3. Select your tunnel
 4. Click **"Save"**
 
 ### 9.2 Configure Split Tunnel
