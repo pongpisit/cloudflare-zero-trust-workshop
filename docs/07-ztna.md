@@ -370,39 +370,31 @@ With WARP connected, users can now access:
 
 ### Web Application Access
 
-```yaml
-ingress:
-  - hostname: intranet.company.com
-    service: http://10.0.0.50:80
-```
+Add a public hostname in the dashboard:
+- **Hostname:** `intranet.company.com`
+- **Service:** `http://10.0.0.50:80`
 
 ### SSH Access
 
-```yaml
-ingress:
-  - hostname: ssh.company.com
-    service: ssh://10.0.0.100:22
-```
+Add a public hostname:
+- **Hostname:** `ssh.company.com`
+- **Service:** `ssh://10.0.0.100:22`
 
 Access via browser: `https://ssh.company.com`
 
 ### RDP Access
 
-```yaml
-ingress:
-  - hostname: rdp.company.com
-    service: rdp://10.0.0.200:3389
-```
+Add a public hostname:
+- **Hostname:** `rdp.company.com`
+- **Service:** `rdp://10.0.0.200:3389`
 
 Access via browser with Cloudflare's RDP client.
 
 ### Database Access
 
-```yaml
-ingress:
-  - hostname: db.company.com
-    service: tcp://10.0.0.150:5432
-```
+Add a public hostname:
+- **Hostname:** `db.company.com`
+- **Service:** `tcp://10.0.0.150:5432`
 
 Requires WARP client for TCP access.
 
@@ -412,36 +404,30 @@ Requires WARP client for TCP access.
 
 ### "Tunnel not connecting"
 
-- Check cloudflared is running
-- Verify credentials file path
-- Check firewall allows outbound 443
-- Review cloudflared logs
+- Check cloudflared service is running on your server
+- Check firewall allows outbound port 443
+- Go to **Networks > Connectors** to check connector status
+- Restart the cloudflared service if needed
 
 ### "Access denied"
 
 - Verify user matches policy rules
 - Check identity provider configuration
-- Review Access logs for denial reason
+- Go to **Insights > Logs (Access tab)** for denial reason
 - Verify application domain matches
 
 ### "Application not loading"
 
-- Verify tunnel is healthy
-- Check service URL in config
-- Verify application is running
+- Verify tunnel is healthy in dashboard
+- Check service URL in public hostname configuration
+- Verify application is running locally
 - Test local access to application
 
 ### "Certificate errors"
 
-- Verify DNS is pointing to tunnel
+- Verify DNS is pointing to tunnel (CNAME record)
 - Check hostname matches configuration
 - Wait for DNS propagation
-
-### View Tunnel Logs
-
-```cmd
-cloudflared tunnel --loglevel debug run my-tunnel
-```
 
 ---
 
@@ -449,9 +435,8 @@ cloudflared tunnel --loglevel debug run my-tunnel
 
 | Skill | Done |
 |-------|------|
-| Install cloudflared | |
-| Create tunnel | |
-| Configure tunnel routes | |
+| Create tunnel via dashboard | |
+| Add public hostnames | |
 | Create Access application | |
 | Create Access policies | |
 | Configure device posture | |
@@ -462,17 +447,16 @@ cloudflared tunnel --loglevel debug run my-tunnel
 
 ## Quick Reference
 
-### Cloudflared Commands
+### Dashboard Navigation
 
-| Command | Description |
-|---------|-------------|
-| `cloudflared tunnel login` | Authenticate |
-| `cloudflared tunnel create NAME` | Create tunnel |
-| `cloudflared tunnel list` | List tunnels |
-| `cloudflared tunnel run NAME` | Run tunnel |
-| `cloudflared tunnel route dns NAME HOST` | Add DNS route |
-| `cloudflared tunnel delete NAME` | Delete tunnel |
-| `cloudflared service install` | Install as service |
+| Task | Location |
+|------|----------|
+| Create/manage tunnels | Networks > Connectors |
+| Add public hostnames | Networks > Connectors > [Tunnel] > Public Hostname |
+| Add private networks | Networks > Connectors > [Tunnel] > Private Network |
+| Create Access apps | Access controls > Applications |
+| Create Access policies | Access controls > Policies |
+| View Access logs | Insights > Logs (Access tab) |
 
 ### Access Policy Actions
 
