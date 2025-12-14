@@ -237,16 +237,6 @@ You should see your device listed with:
 - WARP client version
 - Operating system
 
-### 7.2 Test DNS Resolution
-
-**Open CMD or PowerShell:**
-
-```cmd
-nslookup -type=txt debug.cloudflare.com
-```
-
-Look for output containing your organization info.
-
 ---
 
 ## Step 8: Install Root Certificate (Required for HTTP Inspection)
