@@ -421,7 +421,7 @@ Add to your Access policy:
 
 ### 11.3 Check Access Logs
 
-**Go to:** Logs > Access
+**Go to:** Insights > Logs (Access tab)
 
 View:
 - Successful authentications

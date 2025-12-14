@@ -269,7 +269,7 @@ If you believe this is a mistake, please contact IT support.
 
 ### 7.1 Check Device Status
 
-1. Go to **My Team** > **Devices**
+1. Go to **Team & Resources** > **Devices**
 2. Click on a device
 3. View **Posture** tab
 
@@ -286,7 +286,7 @@ If you believe this is a mistake, please contact IT support.
 
 ### 7.3 Filter Non-Compliant Devices
 
-1. Go to **My Team** > **Devices**
+1. Go to **Team & Resources** > **Devices**
 2. Add filter: **Posture** = **Failed**
 3. Review non-compliant devices
 
@@ -296,7 +296,7 @@ If you believe this is a mistake, please contact IT support.
 
 ### 8.1 View Users
 
-1. Go to **My Team** > **Users**
+1. Go to **Team & Resources** > **Users**
 2. See all enrolled users
 
 ### 8.2 User Information
@@ -311,7 +311,7 @@ If you believe this is a mistake, please contact IT support.
 
 ### 8.3 Revoke User Access
 
-1. Go to **My Team** > **Users**
+1. Go to **Team & Resources** > **Users**
 2. Click on user
 3. Click **Revoke all sessions**
 
@@ -388,7 +388,7 @@ Before enforcing posture:
 
 ### "Posture check failing"
 
-1. Go to **My Team** > **Devices**
+1. Go to **Team & Resources** > **Devices**
 2. Find the device
 3. Check **Posture** tab for specific failure
 4. Remediate the issue on the device

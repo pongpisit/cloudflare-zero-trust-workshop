@@ -295,7 +295,7 @@ Lists let you manage values centrally and reuse them across policies.
 
 ### Creating a List
 
-**Go to:** My Team > Lists
+**Go to:** Reusable components > Lists
 
 1. Click **Create a list**
 2. Choose list type (Domain, URL, IP, etc.)

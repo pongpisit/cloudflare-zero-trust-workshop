@@ -165,15 +165,15 @@ Unlike competitors that require multiple products:
 | Malware detected | Insights > Logs (HTTP tab) | 0 infections |
 | DLP matches | Insights > Logs (HTTP tab) | Review all |
 | CASB findings | Cloud & SaaS findings > Posture Findings | Remediate critical |
-| Access denials | Logs > Access | Investigate |
+| Access denials | Insights > Logs (Access tab) | Investigate |
 
 ### User Experience Metrics
 
 | Metric | Where to Find | Target |
 |--------|---------------|--------|
-| WARP connection time | DEX > Tests | <2 seconds |
-| Application latency | DEX > Tests | <100ms |
-| User satisfaction | DEX > Surveys | >90% |
+| WARP connection time | Insights > Digital experience | <2 seconds |
+| Application latency | Insights > Digital experience | <100ms |
+| User satisfaction | Insights > Digital experience | >90% |
 
 ---
 
