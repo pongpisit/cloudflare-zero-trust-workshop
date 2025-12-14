@@ -1,0 +1,9 @@
+node_modules/
+.auth/
+playwright-report/
+test-results/
+tools/
+package.json
+package-lock.json
+.DS_Store
+docs/screenshots/auto/_manifest.json
