@@ -70,223 +70,127 @@ Before configuring ZTNA:
 
 ---
 
-## Step 1: Install Cloudflare Tunnel (cloudflared)
+## Step 1: Create a Tunnel via Dashboard (Recommended)
 
-### 1.1 Download cloudflared
+The easiest way to create a tunnel is through the Cloudflare dashboard, which provides installation commands tailored to your system.
 
-**Windows:**
-```cmd
-winget install --id Cloudflare.cloudflared
-```
-
-Or download from: https://developers.cloudflare.com/cloudflare-one/connections/connect-networks/downloads/
-
-**macOS:**
-```bash
-brew install cloudflared
-```
-
-**Linux (Debian/Ubuntu):**
-```bash
-curl -L https://pkg.cloudflare.com/cloudflare-main.gpg | sudo tee /usr/share/keyrings/cloudflare-archive-keyring.gpg >/dev/null
-echo "deb [signed-by=/usr/share/keyrings/cloudflare-archive-keyring.gpg] https://pkg.cloudflare.com/cloudflared $(lsb_release -cs) main" | sudo tee /etc/apt/sources.list.d/cloudflared.list
-sudo apt update
-sudo apt install cloudflared
-```
-
-### 1.2 Verify Installation
-
-```cmd
-cloudflared --version
-```
-
-You should see the version number.
-
----
-
-## Step 2: Authenticate cloudflared
-
-### 2.1 Login to Cloudflare
-
-```cmd
-cloudflared tunnel login
-```
-
-### 2.2 Complete Authentication
-
-1. A browser window will open
-2. Select your Cloudflare account
-3. Authorize cloudflared
-4. You'll see "You have successfully logged in"
-
-### 2.3 Verify Certificate
-
-The certificate is saved to:
-- Windows: `%USERPROFILE%\.cloudflared\cert.pem`
-- macOS/Linux: `~/.cloudflared/cert.pem`
-
----
-
-## Step 3: Create a Tunnel
-
-### 3.1 Create Tunnel via CLI
-
-```cmd
-cloudflared tunnel create my-tunnel
-```
-
-**Output:**
-```
-Tunnel credentials written to /path/to/credentials.json
-Created tunnel my-tunnel with id xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx
-```
-
-**Save the tunnel ID** - you'll need it later.
-
-### 3.2 Create Tunnel via Dashboard
-
-Alternatively, use the dashboard:
-
-1. **Go to:** Networks > Connectors
-2. Click **"Create a tunnel"**
-3. Select **"Cloudflared"**
-4. **Name:** `my-tunnel`
-5. Click **"Save tunnel"**
-6. Follow the installation instructions shown
-
----
-
-## Step 4: Configure Tunnel Routes
-
-### 4.1 Create Configuration File
-
-Create `config.yml` in the cloudflared directory:
-
-**Windows:** `%USERPROFILE%\.cloudflared\config.yml`
-**macOS/Linux:** `~/.cloudflared/config.yml`
-
-### 4.2 Basic Configuration
-
-```yaml
-tunnel: my-tunnel
-credentials-file: /path/to/credentials.json
-
-ingress:
-  # Internal web application
-  - hostname: app.yourdomain.com
-    service: http://localhost:8080
-  
-  # Internal API
-  - hostname: api.yourdomain.com
-    service: http://localhost:3000
-  
-  # SSH access
-  - hostname: ssh.yourdomain.com
-    service: ssh://localhost:22
-  
-  # RDP access
-  - hostname: rdp.yourdomain.com
-    service: rdp://localhost:3389
-  
-  # Catch-all (required)
-  - service: http_status:404
-```
-
-### 4.3 Route to Internal Network
-
-To access multiple internal hosts:
-
-```yaml
-ingress:
-  - hostname: internal.yourdomain.com
-    service: http://192.168.1.100:80
-  
-  - hostname: server2.yourdomain.com
-    service: http://192.168.1.101:80
-  
-  - service: http_status:404
-```
-
----
-
-## Step 5: Create DNS Records
-
-### 5.1 Via CLI
-
-```cmd
-cloudflared tunnel route dns my-tunnel app.yourdomain.com
-```
-
-### 5.2 Via Dashboard
-
-1. **Go to:** Networks > Connectors
-2. Click on your tunnel
-3. Go to **"Public Hostname"** tab
-4. Click **"Add a public hostname"**
-5. Configure:
-   - **Subdomain:** app
-   - **Domain:** yourdomain.com
-   - **Service:** http://localhost:8080
-6. Click **"Save hostname"**
-
----
-
-## Step 6: Run the Tunnel
-
-### 6.1 Run Manually (Testing)
-
-```cmd
-cloudflared tunnel run my-tunnel
-```
-
-Keep this terminal open while testing.
-
-### 6.2 Install as Service (Production)
-
-**Windows:**
-```cmd
-cloudflared service install
-```
-
-**macOS:**
-```bash
-sudo cloudflared service install
-```
-
-**Linux:**
-```bash
-sudo cloudflared service install
-sudo systemctl start cloudflared
-sudo systemctl enable cloudflared
-```
-
-### 6.3 Verify Tunnel Status
+### 1.1 Access Tunnel Creation
 
 **Go to:** Networks > Connectors
 
-Your tunnel should show as **"Healthy"** (green).
+1. Click **"Create a tunnel"**
+2. Select **"Cloudflared"** as the connector type
+3. Click **"Next"**
+
+### 1.2 Name Your Tunnel
+
+1. Enter a **tunnel name** (e.g., `my-tunnel`)
+2. Click **"Save tunnel"**
+
+### 1.3 Install and Run Connector
+
+Cloudflare will display installation instructions. **Follow these steps:**
+
+1. **Select your environment:**
+   - Choose your **Operating System** (Windows, macOS, Linux, Docker)
+   - Choose your **CPU Architecture** (64-bit, 32-bit, ARM, ARM64)
+
+2. **Copy the command** provided by Cloudflare
+   - The command includes your unique tunnel token
+   - Example format: `cloudflared service install <your-token>`
+
+3. **Run the command** on your server/machine
+   - Open terminal/command prompt
+   - Paste and execute the command
+
+4. **Wait for connector to appear**
+   - The dashboard will show your connector status
+   - Status should change to **"Connected"**
+
+5. Click **"Next"** to continue
+
+> **Note:** The installation command is unique to your tunnel. Do not share your tunnel token.
+
+### 1.4 Verify Connector Status
+
+Once installed, your connector should show:
+- **Status:** Connected (green)
+- **Version:** Latest cloudflared version
+- **Origin:** Your server's hostname
 
 ---
 
-## Step 7: Create Access Application
+## Step 2: Add Public Hostname (Route Traffic)
+
+After the connector is running, configure where traffic should go.
+
+### 2.1 Add Public Hostname
+
+In the tunnel configuration wizard (or click on your tunnel later):
+
+1. Go to **"Public Hostname"** tab
+2. Click **"Add a public hostname"**
+
+### 2.2 Configure Hostname
+
+| Field | Value | Example |
+|-------|-------|--------|
+| **Subdomain** | Your app subdomain | `app` |
+| **Domain** | Select from your domains | `yourdomain.com` |
+| **Path** | (Optional) Specific path | Leave empty |
+| **Type** | Protocol type | `HTTP` |
+| **URL** | Internal service address | `localhost:8080` |
+
+3. Click **"Save hostname"**
+
+### 2.3 Common Service Types
+
+| Type | URL Format | Use Case |
+|------|------------|----------|
+| HTTP | `http://localhost:8080` | Web applications |
+| HTTPS | `https://localhost:443` | Secure web apps |
+| TCP | `tcp://localhost:22` | SSH, databases |
+| RDP | `rdp://localhost:3389` | Remote desktop |
+| SSH | `ssh://localhost:22` | SSH access |
+
+### 2.4 Add Multiple Hostnames
+
+Repeat the process to add more applications:
+- `api.yourdomain.com` → `http://localhost:3000`
+- `admin.yourdomain.com` → `http://192.168.1.100:80`
+
+---
+
+## Step 3: Verify Tunnel Status
+
+**Go to:** Networks > Connectors
+
+Your tunnel should show:
+- **Status:** Healthy (green)
+- **Connectors:** 1 (or more)
+- **Public Hostnames:** Listed routes
+
+---
+
+## Step 4: Create Access Application
 
 Protect your application with Access policies.
 
-### 7.1 Add Application
+### 4.1 Add Application
 
 **Go to:** Access controls > Applications
 
 1. Click **"Add an application"**
 2. Select **"Self-hosted"**
 
-### 7.2 Configure Application
+### 4.2 Configure Application
 
 **Application Configuration:**
 - **Name:** Internal App
 - **Session Duration:** 24 hours
 - **Application domain:** app.yourdomain.com
 
-### 7.3 Identity Providers
+### 4.3 Identity Providers
 
 Select which identity providers users can authenticate with:
 - One-time PIN
@@ -299,14 +203,14 @@ Click **"Next"**
 
 ---
 
-## Step 8: Create Access Policy
+## Step 5: Create Access Policy
 
-### 8.1 Add Policy
+### 5.1 Add Policy
 
 1. **Policy name:** Allow Employees
 2. **Action:** Allow
 
-### 8.2 Configure Include Rules
+### 5.2 Configure Include Rules
 
 Define who can access:
 
@@ -320,7 +224,7 @@ Define who can access:
 |----------|----------|-------|
 | Access Groups | in | Employees |
 
-### 8.3 Add Additional Rules (Optional)
+### 5.3 Add Additional Rules (Optional)
 
 **Require specific conditions:**
 
@@ -329,34 +233,34 @@ Define who can access:
 | Require | Country | United States, United Kingdom |
 | Require | Device Posture | Firewall enabled |
 
-### 8.4 Save Policy
+### 5.4 Save Policy
 
 Click **"Next"** then **"Add application"**
 
 ---
 
-## Step 9: Create Access Groups
+## Step 6: Create Access Groups
 
 Reusable groups for policies.
 
-### 9.1 Add Group
+### 6.1 Add Group
 
 **Go to:** Access controls > Policies
 
 1. Click **"Add a group"**
 2. **Name:** Employees
 
-### 9.2 Configure Group Rules
+### 6.2 Configure Group Rules
 
 | Selector | Operator | Value |
 |----------|----------|-------|
 | Emails ending in | matches | @yourcompany.com |
 
-### 9.3 Save Group
+### 6.3 Save Group
 
 Click **"Save"**
 
-### 9.4 Common Groups
+### 6.4 Common Groups
 
 | Group Name | Rule |
 |------------|------|
@@ -367,15 +271,15 @@ Click **"Save"**
 
 ---
 
-## Step 10: Configure Device Posture (Optional)
+## Step 7: Configure Device Posture (Optional)
 
 Require device security checks.
 
-### 10.1 Access Device Posture
+### 7.1 Access Device Posture
 
 **Go to:** Reusable components > Posture checks
 
-### 10.2 Add Posture Check
+### 7.2 Add Posture Check
 
 1. Click **"Add new"**
 2. Select check type:
@@ -385,7 +289,7 @@ Require device security checks.
    - Domain joined
    - Running process
 
-### 10.3 Example: Require Firewall
+### 7.3 Example: Require Firewall
 
 1. **Name:** Firewall Enabled
 2. **Type:** Firewall
@@ -393,7 +297,7 @@ Require device security checks.
 4. **Firewall status:** Enabled
 5. Click **"Save"**
 
-### 10.4 Use in Access Policy
+### 7.4 Use in Access Policy
 
 Add to your Access policy:
 
@@ -403,9 +307,9 @@ Add to your Access policy:
 
 ---
 
-## Step 11: Test Access
+## Step 8: Test Access
 
-### 11.1 Browser Access
+### 8.1 Browser Access
 
 1. Open browser
 2. Go to: `https://app.yourdomain.com`
@@ -413,13 +317,13 @@ Add to your Access policy:
 4. Authenticate with your identity provider
 5. After authentication, you should see your application
 
-### 11.2 WARP Client Access
+### 8.2 WARP Client Access
 
 1. Connect WARP client to Zero Trust
 2. Access the application URL
 3. Authentication may be automatic if already logged in
 
-### 11.3 Check Access Logs
+### 8.3 Check Access Logs
 
 **Go to:** Insights > Logs (Access tab)
 
@@ -431,11 +335,11 @@ View:
 
 ---
 
-## Step 12: Private Network Access (Advanced)
+## Step 9: Private Network Access (Advanced)
 
 Access entire private networks, not just specific apps.
 
-### 12.1 Configure Private Network
+### 9.1 Configure Private Network
 
 **Go to:** Networks > Connectors > Your Tunnel
 
@@ -444,7 +348,7 @@ Access entire private networks, not just specific apps.
 3. Enter CIDR range: `192.168.1.0/24`
 4. Click **"Save"**
 
-### 12.2 Configure Split Tunnel
+### 9.2 Configure Split Tunnel
 
 **Go to:** Team & Resources > Devices
 
@@ -453,7 +357,7 @@ Access entire private networks, not just specific apps.
 3. Select **"Include IPs and domains"**
 4. Add your private network CIDR
 
-### 12.3 Access Private Resources
+### 9.3 Access Private Resources
 
 With WARP connected, users can now access:
 - `http://192.168.1.100` (internal server)
