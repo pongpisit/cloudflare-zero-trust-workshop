@@ -250,7 +250,7 @@ Customize the page users see when blocked.
 
 ### 8.1 Access Block Page Settings
 
-**Go to:** Settings > Custom Pages > Gateway block page
+**Go to:** Reusable components > Custom pages
 
 ### 8.2 Customize Block Page
 
@@ -295,7 +295,7 @@ If you blocked adult content, the category should be blocked when users try to a
 
 ### 9.4 Check DNS Logs
 
-**Go to:** Insights > Logs > Gateway > DNS
+**Go to:** Insights > Logs (DNS tab)
 
 You should see:
 - Allowed queries (green)

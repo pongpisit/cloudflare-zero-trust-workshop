@@ -280,7 +280,7 @@ Gateway analyzes HTTP traffic to identify:
 
 ### 8.2 View Shadow IT Report
 
-**Go to:** Insights > Analytics > Access > Shadow IT
+**Go to:** Insights > Dashboards
 
 ### 8.3 Review Discovered Apps
 

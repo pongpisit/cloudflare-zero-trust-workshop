@@ -243,7 +243,7 @@ Files that cannot be scanned:
 
 ### 7.1 Access Logs
 
-**Go to:** Insights > Logs > Gateway > HTTP
+**Go to:** Insights > Logs (HTTP tab)
 
 ### 7.2 Filter for AV Events
 
@@ -298,7 +298,7 @@ Save as `eicar.com` or `eicar.txt`
 
 ### 8.4 Verify in Logs
 
-**Go to:** Insights > Logs > Gateway > HTTP
+**Go to:** Insights > Logs (HTTP tab)
 
 Look for:
 - Action: Block

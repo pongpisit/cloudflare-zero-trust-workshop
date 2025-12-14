@@ -460,10 +460,10 @@ Export key metrics to your monitoring tools:
 
 | Log Type | Path |
 |----------|------|
-| DNS | Insights > Logs > Gateway > DNS |
-| HTTP | Insights > Logs > Gateway > HTTP |
-| Network | Insights > Logs > Gateway > Network |
-| Access | Insights > Logs > Access |
+| DNS | Insights > Logs (DNS tab) |
+| HTTP | Insights > Logs (HTTP tab) |
+| Network | Insights > Logs (Network tab) |
+| Access | Insights > Logs (Access tab) |
 
 ### Common Filters
 

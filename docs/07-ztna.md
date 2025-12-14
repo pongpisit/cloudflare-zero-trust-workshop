@@ -147,7 +147,7 @@ Created tunnel my-tunnel with id xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx
 
 Alternatively, use the dashboard:
 
-1. **Go to:** Networks > Connectors > Cloudflare Tunnels
+1. **Go to:** Networks > Connectors
 2. Click **"Create a tunnel"**
 3. Select **"Cloudflared"**
 4. **Name:** `my-tunnel`
@@ -219,7 +219,7 @@ cloudflared tunnel route dns my-tunnel app.yourdomain.com
 
 ### 5.2 Via Dashboard
 
-1. **Go to:** Networks > Connectors > Cloudflare Tunnels
+1. **Go to:** Networks > Connectors
 2. Click on your tunnel
 3. Go to **"Public Hostname"** tab
 4. Click **"Add a public hostname"**
@@ -262,7 +262,7 @@ sudo systemctl enable cloudflared
 
 ### 6.3 Verify Tunnel Status
 
-**Go to:** Networks > Connectors > Cloudflare Tunnels
+**Go to:** Networks > Connectors
 
 Your tunnel should show as **"Healthy"** (green).
 
@@ -437,7 +437,7 @@ Access entire private networks, not just specific apps.
 
 ### 12.1 Configure Private Network
 
-**Go to:** Networks > Connectors > Cloudflare Tunnels > Your Tunnel
+**Go to:** Networks > Connectors > Your Tunnel
 
 1. Go to **"Private Network"** tab
 2. Click **"Add a private network"**

@@ -160,10 +160,10 @@ Unlike competitors that require multiple products:
 
 | Metric | Where to Find | Target |
 |--------|---------------|--------|
-| DNS blocks | Insights > Analytics > Gateway | Track trends |
-| HTTP blocks | Insights > Analytics > Gateway | Track trends |
-| Malware detected | Insights > Logs > Gateway > HTTP | 0 infections |
-| DLP matches | Insights > Logs > Gateway > HTTP | Review all |
+| DNS blocks | Insights > Logs (DNS tab) | Track trends |
+| HTTP blocks | Insights > Logs (HTTP tab) | Track trends |
+| Malware detected | Insights > Logs (HTTP tab) | 0 infections |
+| DLP matches | Insights > Logs (HTTP tab) | Review all |
 | CASB findings | Cloud & SaaS findings > Posture Findings | Remediate critical |
 | Access denials | Logs > Access | Investigate |
 

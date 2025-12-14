@@ -349,7 +349,7 @@ Isolate risky websites in a remote browser.
 
 ### 10.3 Check HTTP Logs
 
-**Go to:** Insights > Logs > Gateway > HTTP
+**Go to:** Insights > Logs (HTTP tab)
 
 You should see:
 - Request URL

@@ -284,7 +284,7 @@ Set how long to retain payload logs:
 
 ### 9.3 Access Payload Logs
 
-**Go to:** Insights > Logs > Gateway > HTTP
+**Go to:** Insights > Logs (HTTP tab)
 
 Click on a DLP event to see:
 - Matched pattern
@@ -310,7 +310,7 @@ Click on a DLP event to see:
 
 ### 10.3 Check DLP Logs
 
-**Go to:** Insights > Logs > Gateway > HTTP
+**Go to:** Insights > Logs (HTTP tab)
 
 Filter by:
 - DLP Profile matched
@@ -322,7 +322,7 @@ Filter by:
 
 ### 11.1 Access Analytics
 
-**Go to:** Insights > Analytics > Gateway
+**Go to:** Insights > Dashboards
 
 ### 11.2 DLP Metrics
 
