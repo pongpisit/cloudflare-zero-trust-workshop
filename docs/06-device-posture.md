@@ -145,12 +145,12 @@ For Crowdstrike:
 
 ---
 
-## Step 4: Configure WARP Client Settings
+## Step 4: Configure Device Profile Settings
 
 ### 4.1 Access Device Settings
 
-1. Go to **Settings** > **WARP Client**
-2. Click **Device settings**
+1. Go to **Team & Resources** > **Devices**
+2. Click **Device profiles** tab
 
 ### 4.2 Create Device Profile
 
@@ -196,7 +196,7 @@ For Crowdstrike:
 
 ### 5.2 Configure Split Tunnels
 
-1. Go to **Settings** > **WARP Client** > **Device settings**
+1. Go to **Team & Resources** > **Devices** > **Device profiles**
 2. Edit your profile
 3. Find **Split Tunnels**
 4. Choose mode:
@@ -343,7 +343,7 @@ For internal domains that should resolve via internal DNS:
 
 ### 9.2 Configure Fallback
 
-1. Go to **Settings** > **WARP Client** > **Device settings**
+1. Go to **Team & Resources** > **Devices** > **Device profiles**
 2. Edit your profile
 3. Find **Local Domain Fallback**
 4. Click **Manage**
