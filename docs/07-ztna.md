@@ -373,7 +373,7 @@ Require device security checks.
 
 ### 10.1 Access Device Posture
 
-**Go to:** Devices > Device posture
+**Go to:** Reusable components > Posture checks
 
 ### 10.2 Add Posture Check
 
@@ -446,7 +446,7 @@ Access entire private networks, not just specific apps.
 
 ### 12.2 Configure Split Tunnel
 
-**Go to:** Devices > Device profiles
+**Go to:** Team & Resources > Devices
 
 1. Edit your device profile
 2. Go to **"Split Tunnels"**

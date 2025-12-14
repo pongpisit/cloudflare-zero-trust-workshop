@@ -59,11 +59,11 @@ Before configuring DLP:
 
 ## Step 1: Access DLP Settings
 
-**Go to:** Data Loss Prevention > DLP Profiles
+**Go to:** Data loss prevention > Profiles
 
 1. Open https://one.dash.cloudflare.com/
-2. In the left sidebar, click **Data Loss Prevention**
-3. Click **DLP Profiles**
+2. In the left sidebar, click **Data loss prevention**
+3. Click **Profiles**
 
 ---
 
@@ -271,7 +271,7 @@ Log the actual content that triggered DLP.
 
 ### 9.1 Enable Payload Logging
 
-**Go to:** Traffic policies > Traffic settings
+**Go to:** Settings > Network
 
 Under **Payload logging**, turn on: **Enable payload logging**
 

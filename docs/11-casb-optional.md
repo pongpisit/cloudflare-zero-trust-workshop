@@ -72,11 +72,11 @@
 
 ## Step 1: Access CASB Settings
 
-**Go to:** CASB > Integrations
+**Go to:** Integrations > Cloud & SaaS
 
 1. Open https://one.dash.cloudflare.com/
-2. In the left sidebar, click **CASB**
-3. Click **Integrations**
+2. In the left sidebar, click **Integrations**
+3. Click **Cloud & SaaS**
 
 ---
 
@@ -153,7 +153,7 @@ Click **"Save"**
 
 ### 4.1 Access Findings
 
-**Go to:** CASB > Findings
+**Go to:** Cloud & SaaS findings > Posture Findings
 
 Or click on an integration to see its findings.
 
@@ -254,7 +254,7 @@ Scan files in SaaS apps for sensitive data.
 
 ### 7.3 View DLP Findings
 
-**Go to:** CASB > Findings
+**Go to:** Cloud & SaaS findings > Posture Findings
 
 Filter by: **DLP**
 

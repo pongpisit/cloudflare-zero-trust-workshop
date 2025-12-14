@@ -164,7 +164,7 @@ Unlike competitors that require multiple products:
 | HTTP blocks | Insights > Analytics > Gateway | Track trends |
 | Malware detected | Insights > Logs > Gateway > HTTP | 0 infections |
 | DLP matches | Insights > Logs > Gateway > HTTP | Review all |
-| CASB findings | CASB > Findings | Remediate critical |
+| CASB findings | Cloud & SaaS findings > Posture Findings | Remediate critical |
 | Access denials | Logs > Access | Investigate |
 
 ### User Experience Metrics
