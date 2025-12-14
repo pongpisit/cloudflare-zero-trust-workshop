@@ -92,7 +92,7 @@ Or direct links:
 
 ### 4.1 Enable TLS Inspection
 
-1. Go to **Settings** > **Network**
+1. Go to **Traffic policies** > **Traffic settings**
 2. Turn on **Proxy**
 3. Turn on **TLS decryption**
 

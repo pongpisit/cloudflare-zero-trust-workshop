@@ -271,7 +271,7 @@ Log the actual content that triggered DLP.
 
 ### 9.1 Enable Payload Logging
 
-**Go to:** Settings > Network
+**Go to:** Traffic policies > Traffic settings
 
 Under **Payload logging**, turn on: **Enable payload logging**
 

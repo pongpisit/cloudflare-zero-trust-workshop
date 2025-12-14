@@ -130,12 +130,13 @@ Define who can enroll devices in your organization.
 
 ### 4.1 Create Enrollment Rule
 
-**Go to:** Team & Resources > Devices
+**Go to:** Devices > Device profiles > Management
 
-1. In the left sidebar, click **Team & Resources**
+1. In the left sidebar, expand **Team & Resources**
 2. Click **Devices**
-3. Click on **Device enrollment** tab
-4. Click **Manage** to configure enrollment permissions
+3. Click **Device profiles** tab
+4. Click **Management**
+5. Under **Device enrollment permissions**, click **Manage**
 
 1. Click **"Add a rule"**
 2. **Rule name:** `Allow all users` (for workshop)
@@ -341,7 +342,7 @@ https://developers.cloudflare.com/cloudflare-one/connections/connect-devices/war
 | Team Name | Settings > General |
 | Device List | Team & Resources > Devices |
 | Authentication | Settings > Authentication |
-| Enrollment Rules | Team & Resources > Devices > Device enrollment |
+| Enrollment Rules | Team & Resources > Devices > Device profiles > Management |
 | Certificates | Settings > Resources > Certificates |
 
 ---

@@ -56,11 +56,11 @@ Before enabling AV scanning:
 
 ### 1.1 Access Traffic Settings
 
-**Go to:** Settings > Network
+**Go to:** Traffic policies > Traffic settings
 
 1. Open https://one.dash.cloudflare.com/
-2. In the left sidebar, click **Settings**
-3. Click **Network**
+2. In the left sidebar, click **Traffic policies**
+3. Click **Traffic settings**
 4. Scroll to **AV scanning** section
 
 ### 1.2 Enable AV Scanning
@@ -411,11 +411,11 @@ AV scanning is one layer. Combine with:
 
 | Setting | Location |
 |---------|----------|
-| Enable AV | Settings > Network |
-| Scan uploads | Settings > Network |
-| Scan downloads | Settings > Network |
-| Block non-scannable | Settings > Network |
-| WARP notifications | Settings > Network |
+| Enable AV | Traffic policies > Traffic settings |
+| Scan uploads | Traffic policies > Traffic settings |
+| Scan downloads | Traffic policies > Traffic settings |
+| Block non-scannable | Traffic policies > Traffic settings |
+| WARP notifications | Traffic policies > Traffic settings |
 
 ### File Size Limits
 

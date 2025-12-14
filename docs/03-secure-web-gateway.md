@@ -54,11 +54,11 @@
 
 ### 1.1 Access Network Settings
 
-**Go to:** Settings > Network
+**Go to:** Traffic policies > Traffic settings
 
 1. Open https://one.dash.cloudflare.com/
-2. In the left sidebar, click **Settings**
-3. Click **Network**
+2. In the left sidebar, click **Traffic policies**
+3. Click **Traffic settings**
 
 ### 1.2 Enable Proxy
 
@@ -90,9 +90,9 @@ Before enabling TLS inspection:
 
 ### 2.2 Enable TLS Decryption
 
-**Go to:** Settings > Network
+**Go to:** Traffic policies > Traffic settings
 
-Under **Firewall**, turn on: **TLS decryption**
+Under **Proxy and inspection settings**, turn on: **TLS decryption**
 
 ### 2.3 Configure TLS Settings
 
