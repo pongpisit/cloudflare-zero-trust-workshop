@@ -71,8 +71,8 @@
 ### 1.1 Navigate to Browser Isolation
 
 1. Open https://one.dash.cloudflare.com/
-2. In the left sidebar, click **Settings**
-3. Click **Browser Isolation**
+2. In the left sidebar, click **Browser isolation**
+3. Click **Browser isolation settings**
 
 ### 1.2 Verify License
 
@@ -86,7 +86,7 @@ Check that Browser Isolation is enabled for your account.
 
 ### 2.1 Access Clientless Settings
 
-1. Go to **Settings** > **Browser Isolation**
+1. Go to **Browser isolation** > **Browser isolation settings**
 2. Find **Clientless Web Isolation** section
 3. Toggle **Enable Clientless Web Isolation**
 
@@ -153,7 +153,7 @@ Control what users can do in isolated browser.
 
 ### 4.1 Access Permission Settings
 
-1. Go to **Settings** > **Browser Isolation**
+1. Go to **Browser isolation** > **Browser isolation settings**
 2. Find **Clientless Web Isolation** section
 3. Click **Configure permissions**
 

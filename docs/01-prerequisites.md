@@ -99,15 +99,14 @@ Before users can enroll devices, you need to set up authentication.
 
 ### 3.1 Set Up One-Time PIN (Easiest)
 
-**Go to:** Settings > Authentication > Login methods
+**Go to:** Integrations > Identity providers
 
 1. Open https://one.dash.cloudflare.com/
-2. In the left sidebar, click **Settings**
-3. Click **Authentication**
-4. Click **Login methods**
-5. Click **"Add new"**
-6. Select **"One-time PIN"**
-7. Click **"Add"**
+2. In the left sidebar, click **Integrations**
+3. Click **Identity providers**
+4. Click **Add new identity provider**
+5. Select **"One-time PIN"**
+6. Click **"Add"**
 
 > **Note:** One-time PIN sends a code to the user's email. This is the simplest method for workshops.
 
@@ -120,7 +119,7 @@ For production environments, you can integrate with:
 - OneLogin
 - And many more
 
-**Go to:** Settings > Authentication > Login methods > Add new
+**Go to:** Integrations > Identity providers > Add new identity provider
 
 ---
 
@@ -341,7 +340,7 @@ https://developers.cloudflare.com/cloudflare-one/connections/connect-devices/war
 | WARP Downloads | https://one.one.one.one |
 | Team Name | Settings > General |
 | Device List | Team & Resources > Devices |
-| Authentication | Settings > Authentication |
+| Identity Providers | Integrations > Identity providers |
 | Enrollment Rules | Team & Resources > Devices > Device profiles > Management |
 | Certificates | Settings > Resources > Certificates |
 
