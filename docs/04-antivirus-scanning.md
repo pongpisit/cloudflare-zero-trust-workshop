@@ -426,6 +426,8 @@ AV scanning is one layer. Combine with:
 
 You have enabled anti-virus scanning to protect against malware!
 
-**Next:** [Module 05: Data Loss Prevention](./05-dlp.md)
+**Next:** [Module 05: Device Posture](./05-device-posture.md)
 
-In the next module, you will configure DLP to detect and protect sensitive data.
+In the next module, you will configure device posture checks and WARP settings.
+
+> **Optional:** [Module 10: Data Loss Prevention](./10-dlp-optional.md) - Configure DLP to detect and protect sensitive data (requires DLP license).

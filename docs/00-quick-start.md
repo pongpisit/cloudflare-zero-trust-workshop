@@ -231,9 +231,9 @@ Now that you have basic protection, continue with the full workshop:
 2. [Module 02: DNS Filtering](./02-dns-filtering.md) - Advanced DNS policies
 3. [Module 03: Secure Web Gateway](./03-secure-web-gateway.md) - HTTP policies
 4. [Module 04: Anti-Virus](./04-antivirus-scanning.md) - File scanning
-5. [Module 05: DLP](./05-dlp.md) - Data protection
-6. [Module 06: Device Posture](./06-device-posture.md) - Device security
-7. [Module 07: ZTNA](./07-ztna.md) - Private app access
+5. [Module 10: DLP (Optional)](./10-dlp-optional.md) - Data protection
+6. [Module 05: Device Posture](./05-device-posture.md) - Device security
+7. [Module 06: ZTNA](./06-ztna.md) - Private app access
 8. [Module 08: Logs & Analytics](./08-logs-analytics.md) - Monitoring
 9. [Module 09: Summary](./09-workshop-summary.md) - Review & next steps
 

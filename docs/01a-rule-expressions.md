@@ -544,8 +544,8 @@ Now that you understand rule expressions, apply them in:
 
 - **Module 02:** [DNS Filtering](./02-dns-filtering.md) - DNS policy expressions
 - **Module 03:** [Secure Web Gateway](./03-secure-web-gateway.md) - HTTP policy expressions
-- **Module 06:** [ZTNA](./07-ztna.md) - Access policy expressions
-- **Module 07:** [Browser Isolation](./10-browser-isolation.md) - Isolation policy expressions
+- **Module 06:** [ZTNA](./06-ztna.md) - Access policy expressions
+- **Module 07:** [Browser Isolation](./07-browser-isolation.md) - Isolation policy expressions
 
 ---
 

@@ -1,4 +1,4 @@
-# Module 07: Zero Trust Network Access (ZTNA)
+# Module 06: Zero Trust Network Access (ZTNA)
 
 **Duration:** 60 minutes
 

@@ -493,6 +493,6 @@ Export DLP data for compliance reporting.
 
 You have configured Data Loss Prevention to protect sensitive data!
 
-**Next:** [Module 06: Device Posture](./06-device-posture.md)
+**Next:** [Module 05: Device Posture](./05-device-posture.md)
 
 In the next module, you will configure device posture checks to ensure device security.

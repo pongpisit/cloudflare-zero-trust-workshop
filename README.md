@@ -32,9 +32,9 @@ Get basic DNS filtering, HTTP protection, and AV scanning in 30 minutes.
 | 02 | [DNS Filtering](./docs/02-dns-filtering.md) | 45 min | DNS policies, content categories |
 | 03 | [Secure Web Gateway](./docs/03-secure-web-gateway.md) | 60 min | HTTP policies, TLS inspection |
 | 04 | [Anti-Virus & File Scanning](./docs/04-antivirus-scanning.md) | 30 min | Malware protection, file sandboxing |
-| 05 | [Device Posture](./docs/06-device-posture.md) | 30 min | Device security, WARP settings |
-| 06 | [Zero Trust Network Access](./docs/07-ztna.md) | 60 min | Cloudflare Tunnel, Access policies |
-| 07 | [Browser Isolation](./docs/10-browser-isolation.md) | 45 min | Agentless ZTNA, clientless access |
+| 05 | [Device Posture](./docs/05-device-posture.md) | 30 min | Device security, WARP settings |
+| 06 | [Zero Trust Network Access](./docs/06-ztna.md) | 60 min | Cloudflare Tunnel, Access policies |
+| 07 | [Browser Isolation](./docs/07-browser-isolation.md) | 45 min | Agentless ZTNA, clientless access |
 | 08 | [Logs & Analytics](./docs/08-logs-analytics.md) | 30 min | Monitoring, alerts, 8 log types |
 | 09 | [Workshop Summary](./docs/09-workshop-summary.md) | 15 min | Review, next steps |
 
@@ -44,7 +44,7 @@ Get basic DNS filtering, HTTP protection, and AV scanning in 30 minutes.
 
 | Module | Topic | Duration | Requirements |
 |--------|-------|----------|-------------|
-| 10 | [Data Loss Prevention](./docs/05-dlp.md) | 45 min | Requires DLP license |
+| 10 | [Data Loss Prevention](./docs/10-dlp-optional.md) | 45 min | Requires DLP license |
 | 11 | [CASB](./docs/11-casb-optional.md) | 45 min | Requires SaaS API integration (Microsoft 365, Google Workspace, etc.) |
 
 > **Note:** Optional modules require additional licensing or 3rd party integrations.

@@ -469,6 +469,6 @@ Before enforcing posture:
 
 You now have complete device posture and WARP configuration!
 
-**Next:** [Module 07: Zero Trust Network Access](./07-ztna.md)
+**Next:** [Module 06: Zero Trust Network Access](./06-ztna.md)
 
 In the next module, you will set up ZTNA to provide secure access to private applications.
