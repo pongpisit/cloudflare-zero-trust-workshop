@@ -227,23 +227,30 @@ Add these to **Exclude** list for compatibility:
 
 ## Step 6: Customize Block Pages
 
-### 6.1 Access Block Page Settings
+### 6.1 Access Custom Pages
 
-1. Go to **Reusable components** > **Custom pages**
-2. Click **Gateway block page**
+**Go to:** Reusable components > Custom pages
 
-### 6.2 Customize Block Page
+### 6.2 Available Custom Pages
 
-| Element | Customization |
-|---------|---------------|
-| Logo | Upload company logo |
-| Header | Custom header text |
-| Body | Explanation message |
-| Background color | Brand color |
-| Support email | helpdesk@company.com |
-| Support URL | Help desk link |
+| Page Type | Description |
+|-----------|-------------|
+| **Gateway block page** | Displayed when Gateway policies block a destination |
+| **App Launcher customization** | Add organization branding and custom landing page |
+| **Access login page** | Displayed when users reach an application behind Access |
+| **Access custom block pages** | Displayed when users fail Access authentication |
 
-### 6.3 Example Block Page Content
+### 6.3 Configure Gateway Block Page
+
+1. Click **Manage** next to **Gateway block page**
+2. Customize the block page:
+   - Upload company logo
+   - Add custom header text
+   - Add explanation message
+   - Set background color
+   - Add support email/URL
+
+### 6.4 Example Block Page Content
 
 **Header:** `Access Blocked`
 
@@ -255,11 +262,6 @@ If you believe this is a mistake, please contact IT support.
 ```
 
 **Support email:** `helpdesk@yourcompany.com`
-
-### 6.4 Enable Block Page
-
-1. Go to **Settings** > **Network**
-2. Enable **Display block page**
 
 > **Note:** Block page requires TLS inspection for HTTPS sites.
 
