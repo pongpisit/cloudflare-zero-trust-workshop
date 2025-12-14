@@ -318,27 +318,7 @@ For each application, see:
 
 Get notified of new security findings.
 
-### 9.1 Access Notifications
-
-**Go to:** Settings > Notifications
-
-### 9.2 Create CASB Alert
-
-1. Click **"Add notification"**
-2. **Name:** `Critical CASB Findings`
-3. **Type:** CASB
-4. **Severity:** Critical, High
-5. **Delivery:** Email, Webhook, or PagerDuty
-6. Click **"Save"**
-
-### 9.3 Alert Types
-
-| Alert | Trigger |
-|-------|---------|
-| New critical finding | Critical severity finding detected |
-| Public file detected | File shared publicly |
-| DLP match | Sensitive data found in file |
-| New admin | New admin user created |
+Skip this section if Notifications are not available in your plan/UI.
 
 ---
 
