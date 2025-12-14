@@ -11,8 +11,7 @@
 - Create custom detection patterns
 - View DLP logs and alerts
 
-Refresher on rule expression building (Traffic/Identity/Device signals and operators like `and`, `or`, `in`, `not in`, `in list`):
-`Module 01` -> `Theory: Rule Expressions (Traffic, Identity, Device)`
+> **📚 Rule Expressions:** New to Cloudflare policies? Start with [Module 01a: Understanding Rule Expressions](./01a-rule-expressions.md) to learn about signals, operators, and lists.
 
 ---
 

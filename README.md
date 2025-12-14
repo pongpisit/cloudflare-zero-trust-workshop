@@ -28,6 +28,7 @@ Get basic DNS filtering, HTTP protection, and AV scanning in 30 minutes.
 |--------|-------|----------|----------|
 | 00 | [Quick Start](./docs/00-quick-start.md) | 30 min | Immediate basic protection |
 | 01 | [Prerequisites & Setup](./docs/01-prerequisites.md) | 30 min | Account setup, WARP client |
+| 01a | [Understanding Rule Expressions](./docs/01a-rule-expressions.md) | 20 min | Signals, operators, lists, policy logic |
 | 02 | [DNS Filtering](./docs/02-dns-filtering.md) | 45 min | DNS policies, content categories |
 | 03 | [Secure Web Gateway](./docs/03-secure-web-gateway.md) | 60 min | HTTP policies, TLS inspection |
 | 04 | [Anti-Virus & File Scanning](./docs/04-antivirus-scanning.md) | 30 min | Malware protection |

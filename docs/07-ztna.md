@@ -11,8 +11,7 @@
 - Replace VPN with Zero Trust access
 - Test and troubleshoot ZTNA setup
 
-Refresher on Access policy rule expressions (Identity/Device signals and operators like `and`, `or`, `in`, `not in`):
-`Module 01` -> `Theory: Rule Expressions (Traffic, Identity, Device)`
+> **📚 Rule Expressions:** New to Cloudflare policies? Start with [Module 01a: Understanding Rule Expressions](./01a-rule-expressions.md) to learn about signals, operators, and lists.
 
 ---
 

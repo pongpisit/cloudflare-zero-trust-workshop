@@ -14,8 +14,7 @@
 - Filter by DNS Record Type
 - Test DNS filtering
 
-If you want a quick refresher on how Cloudflare rule builders work (signals like Traffic/Identity/Device and operators like `and`, `or`, `in`, `not in`, `in list`), review:
-`Module 01` -> `Theory: Rule Expressions (Traffic, Identity, Device)`
+> **📚 Rule Expressions:** New to Cloudflare policies? Start with [Module 01a: Understanding Rule Expressions](./01a-rule-expressions.md) to learn about signals, operators, and lists.
 
 ---
 
