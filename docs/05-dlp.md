@@ -11,6 +11,9 @@
 - Create custom detection patterns
 - View DLP logs and alerts
 
+Refresher on rule expression building (Traffic/Identity/Device signals and operators like `and`, `or`, `in`, `not in`, `in list`):
+`Module 01` -> `Theory: Rule Expressions (Traffic, Identity, Device)`
+
 ---
 
 ## How DLP Works

@@ -11,6 +11,9 @@
 - Control application access
 - Configure Do Not Inspect policies
 
+Refresher on rule expression building (Traffic/Identity/Device signals and operators like `and`, `or`, `in`, `not in`, `in list`):
+`Module 01` -> `Theory: Rule Expressions (Traffic, Identity, Device)`
+
 ---
 
 ## How Secure Web Gateway Works
