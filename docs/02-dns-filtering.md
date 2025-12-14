@@ -47,6 +47,8 @@
 
 **Go to:** Traffic policies > Firewall policies
 
+![Traffic policies > Firewall policies](./screenshots/auto/nav-traffic-policies-firewall-policies.png)
+
 1. Open https://one.dash.cloudflare.com/
 2. In the left sidebar, click **Traffic policies**
 3. Click **Firewall policies**
@@ -252,6 +254,8 @@ Customize the page users see when blocked.
 
 **Go to:** Reusable components > Custom pages
 
+![Reusable components > Custom pages](./screenshots/auto/nav-reusable-components-custom-pages.png)
+
 ### 8.2 Customize Block Page
 
 **Options:**
@@ -264,6 +268,8 @@ Customize the page users see when blocked.
 ### 8.3 Enable Block Page
 
 **Go to:** Reusable components > Custom pages
+
+![Reusable components > Custom pages](./screenshots/auto/nav-reusable-components-custom-pages.png)
 
 Enable: **Display block page**
 
@@ -307,6 +313,8 @@ This official Cloudflare page helps you verify your Zero Trust configuration is 
 
 **Go to:** Insights > Logs (DNS tab)
 
+![Insights > Logs (DNS tab)](./screenshots/auto/nav-insights-logs.png)
+
 You should see:
 - Allowed queries (green)
 - Blocked queries (red)
@@ -321,6 +329,8 @@ Filter DNS for specific office locations.
 ### 10.1 Add DNS Location
 
 **Go to:** Networks > Resolvers & Proxies > DNS Locations
+
+![Networks > Resolvers & Proxies > DNS Locations](./screenshots/auto/nav-networks-resolvers-and-proxies-dns-locations.png)
 
 1. **Name:** `Main Office`
 2. **Note the DNS addresses provided:**

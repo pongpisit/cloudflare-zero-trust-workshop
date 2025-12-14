@@ -233,6 +233,8 @@ Add these to **Exclude** list for compatibility:
 
 **Go to:** Reusable components > Custom pages
 
+![Reusable components > Custom pages](./screenshots/auto/nav-reusable-components-custom-pages.png)
+
 ### 6.2 Available Custom Pages
 
 | Page Type | Description |

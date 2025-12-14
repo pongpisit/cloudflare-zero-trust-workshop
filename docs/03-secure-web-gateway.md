@@ -56,6 +56,8 @@
 
 **Go to:** Traffic policies > Traffic settings
 
+![Traffic policies > Traffic settings](./screenshots/auto/nav-traffic-policies-traffic-settings.png)
+
 1. Open https://one.dash.cloudflare.com/
 2. In the left sidebar, click **Traffic policies**
 3. Click **Traffic settings**
@@ -92,6 +94,8 @@ Before enabling TLS inspection:
 
 **Go to:** Traffic policies > Traffic settings
 
+![Traffic policies > Traffic settings](./screenshots/auto/nav-traffic-policies-traffic-settings.png)
+
 Under **Proxy and inspection settings**, turn on: **TLS decryption**
 
 ### 2.3 Configure TLS Settings
@@ -113,6 +117,8 @@ Block access to security threats at the HTTP level.
 ### 3.1 Access HTTP Policies
 
 **Go to:** Traffic policies > Firewall policies
+
+![Traffic policies > Firewall policies](./screenshots/auto/nav-traffic-policies-firewall-policies.png)
 
 1. Open https://one.dash.cloudflare.com/
 2. In the left sidebar, click **Traffic policies**
@@ -278,6 +284,8 @@ Some applications break when TLS is inspected. Create bypass rules.
 
 **Go to:** Traffic policies > Firewall policies > HTTP
 
+![Traffic policies > Firewall policies > HTTP](./screenshots/auto/nav-traffic-policies-firewall-policies-http.png)
+
 1. Click **"Add a policy"**
 2. **Name:** `Do Not Inspect - Certificate Pinned Apps`
 
@@ -350,6 +358,8 @@ Isolate risky websites in a remote browser.
 ### 10.3 Check HTTP Logs
 
 **Go to:** Insights > Logs (HTTP tab)
+
+![Insights > Logs (HTTP tab)](./screenshots/auto/nav-insights-logs.png)
 
 You should see:
 - Request URL

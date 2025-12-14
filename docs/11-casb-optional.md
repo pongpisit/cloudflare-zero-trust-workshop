@@ -74,6 +74,8 @@
 
 **Go to:** Integrations > Cloud & SaaS
 
+![Integrations > Cloud & SaaS](./screenshots/auto/nav-integrations-cloud-and-saas.png)
+
 1. Open https://one.dash.cloudflare.com/
 2. In the left sidebar, click **Integrations**
 3. Click **Cloud & SaaS**
@@ -154,6 +156,8 @@ Click **"Save"**
 ### 4.1 Access Findings
 
 **Go to:** Cloud & SaaS findings > Posture Findings
+
+![Cloud & SaaS findings > Posture Findings](./screenshots/auto/nav-cloud-and-saas-findings-posture-findings.png)
 
 Or click on an integration to see its findings.
 
@@ -256,6 +260,8 @@ Scan files in SaaS apps for sensitive data.
 
 **Go to:** Cloud & SaaS findings > Posture Findings
 
+![Cloud & SaaS findings > Posture Findings](./screenshots/auto/nav-cloud-and-saas-findings-posture-findings.png)
+
 Filter by: **DLP**
 
 You'll see files containing:
@@ -281,6 +287,8 @@ Gateway analyzes HTTP traffic to identify:
 ### 8.2 View Shadow IT Report
 
 **Go to:** Insights > Dashboards
+
+![Insights > Dashboards](./screenshots/auto/nav-insights-dashboards.png)
 
 ### 8.3 Review Discovered Apps
 

@@ -78,6 +78,8 @@ The easiest way to create a tunnel is through the Cloudflare dashboard, which pr
 
 **Go to:** Networks > Connectors
 
+![Networks > Connectors](./screenshots/auto/nav-networks-connectors.png)
+
 1. Click **"Create a tunnel"**
 2. Select **"Cloudflared"** as the connector type
 3. Click **"Next"**
@@ -165,6 +167,8 @@ Repeat the process to add more applications:
 
 **Go to:** Networks > Connectors
 
+![Networks > Connectors](./screenshots/auto/nav-networks-connectors.png)
+
 Your tunnel should show:
 - **Status:** Healthy (green)
 - **Connectors:** 1 (or more)
@@ -179,6 +183,8 @@ Protect your application with Access policies.
 ### 4.1 Add Application
 
 **Go to:** Access controls > Applications
+
+![Access controls > Applications](./screenshots/auto/nav-access-controls-applications.png)
 
 1. Click **"Add an application"**
 2. Select **"Self-hosted"**
@@ -247,6 +253,8 @@ Reusable groups for policies.
 
 **Go to:** Access controls > Policies
 
+![Access controls > Policies](./screenshots/auto/nav-access-controls-policies.png)
+
 1. Click **"Add a group"**
 2. **Name:** Employees
 
@@ -278,6 +286,8 @@ Require device security checks.
 ### 7.1 Access Device Posture
 
 **Go to:** Reusable components > Posture checks
+
+![Reusable components > Posture checks](./screenshots/auto/nav-reusable-components-posture-checks.png)
 
 ### 7.2 Add Posture Check
 
@@ -327,6 +337,8 @@ Add to your Access policy:
 
 **Go to:** Insights > Logs (Access tab)
 
+![Insights > Logs (Access tab)](./screenshots/auto/nav-insights-logs.png)
+
 View:
 - Successful authentications
 - Blocked attempts
@@ -343,6 +355,8 @@ Access entire private networks, not just specific apps.
 
 **Go to:** Networks > Connectors > Your Tunnel
 
+![Networks > Connectors > Your Tunnel](./screenshots/auto/nav-networks-connectors.png)
+
 1. Go to **"Private Network"** tab
 2. Click **"Add a private network"**
 3. Enter CIDR range: `192.168.1.0/24`
@@ -351,6 +365,8 @@ Access entire private networks, not just specific apps.
 ### 9.2 Configure Split Tunnel
 
 **Go to:** Team & Resources > Devices
+
+![Team & Resources > Devices](./screenshots/auto/nav-team-and-resources-devices.png)
 
 1. Edit your device profile
 2. Go to **"Split Tunnels"**

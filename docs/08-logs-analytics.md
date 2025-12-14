@@ -460,6 +460,8 @@ Export key metrics to your monitoring tools:
 
 **Go to:** Insights > Logs
 
+![Insights > Logs](./screenshots/auto/nav-insights-logs.png)
+
 | Log Type | Description | Dataset |
 |----------|-------------|--------|
 | **Admin activity logs** | Monitor when a member creates, updates, or deletes configurations | Audit logs |

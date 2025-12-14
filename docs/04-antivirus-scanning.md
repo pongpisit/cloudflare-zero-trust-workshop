@@ -58,6 +58,8 @@ Before enabling AV scanning:
 
 **Go to:** Traffic policies > Traffic settings
 
+![Traffic policies > Traffic settings](./screenshots/auto/nav-traffic-policies-traffic-settings.png)
+
 1. Open https://one.dash.cloudflare.com/
 2. In the left sidebar, click **Traffic policies**
 3. Click **Traffic settings**
@@ -121,6 +123,8 @@ When a malicious file is blocked, users will see:
 
 **Go to:** Traffic policies > Firewall policies > HTTP
 
+![Traffic policies > Firewall policies > HTTP](./screenshots/auto/nav-traffic-policies-firewall-policies-http.png)
+
 1. Click **"Add a policy"**
 2. **Name:** `Block Downloads from Risky Sites`
 
@@ -162,6 +166,8 @@ Some legitimate files may trigger false positives.
 ### 5.1 Create Do Not Scan Policy
 
 **Go to:** Traffic policies > Firewall policies > HTTP
+
+![Traffic policies > Firewall policies > HTTP](./screenshots/auto/nav-traffic-policies-firewall-policies-http.png)
 
 1. Click **"Add a policy"**
 2. **Name:** `Do Not Scan - Development Tools`
@@ -230,6 +236,8 @@ Files that cannot be scanned:
 
 **Go to:** Insights > Logs (HTTP tab)
 
+![Insights > Logs (HTTP tab)](./screenshots/auto/nav-insights-logs.png)
+
 ### 7.2 Filter for AV Events
 
 Use filters:
@@ -289,6 +297,8 @@ Save as `eicar.com` or `eicar.txt`
 
 **Go to:** Insights > Logs (HTTP tab)
 
+![Insights > Logs (HTTP tab)](./screenshots/auto/nav-insights-logs.png)
+
 Look for:
 - Action: Block
 - File name: eicar
@@ -308,6 +318,8 @@ Check logs for:
 ### 9.2 Create Exception Policy
 
 **Go to:** Traffic policies > Firewall policies > HTTP
+
+![Traffic policies > Firewall policies > HTTP](./screenshots/auto/nav-traffic-policies-firewall-policies-http.png)
 
 1. Click **"Add a policy"**
 2. **Name:** `Allow Known Good File`

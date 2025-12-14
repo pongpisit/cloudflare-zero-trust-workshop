@@ -299,6 +299,8 @@ https://dash.cloudflare.com/
 
 ![https://dash.cloudflare.com/](./screenshots/auto/nav-https-dash-cloudflare-com.png)
 
+![https://dash.cloudflare.com/](./screenshots/auto/nav-https-dash-cloudflare-com.png)
+
 You should see the Cloudflare Dashboard.
 
 ---
@@ -357,6 +359,8 @@ Before users can enroll devices, you need to set up authentication.
 
 ![Integrations > Identity providers](./screenshots/auto/nav-integrations-identity-providers.png)
 
+![Integrations > Identity providers](./screenshots/auto/nav-integrations-identity-providers.png)
+
 1. Open https://one.dash.cloudflare.com/
 2. In the left sidebar, click **Integrations**
 3. Click **Identity providers**
@@ -382,6 +386,8 @@ Supported identity providers:
 
 ![Integrations > Identity providers > Add new identity provider](./screenshots/auto/nav-integrations-identity-providers.png)
 
+![Integrations > Identity providers > Add new identity provider](./screenshots/auto/nav-integrations-identity-providers.png)
+
 ---
 
 ## Step 4: Configure Device Enrollment
@@ -391,6 +397,8 @@ Define who can enroll devices in your organization.
 ### 4.1 Create Enrollment Rule
 
 **Go to:** Team & Resources > Devices > Management > Device enrollment
+
+![Team & Resources > Devices > Management > Device enrollment](./screenshots/auto/nav-team-and-resources-devices-management-device-enrollment.png)
 
 ![Team & Resources > Devices > Management > Device enrollment](./screenshots/auto/nav-team-and-resources-devices-management-device-enrollment.png)
 
@@ -425,6 +433,8 @@ The WARP client connects your device to Cloudflare Zero Trust.
 ### 5.1 Download WARP Client
 
 **Go to:** https://one.one.one.one/
+
+![https://one.one.one.one/](./screenshots/auto/nav-https-one-one-one-one.png)
 
 ![https://one.one.one.one/](./screenshots/auto/nav-https-one-one-one-one.png)
 
@@ -498,6 +508,8 @@ Back in the WARP client:
 
 ![Team & Resources > Devices](./screenshots/auto/nav-team-and-resources-devices.png)
 
+![Team & Resources > Devices](./screenshots/auto/nav-team-and-resources-devices.png)
+
 You should see your device listed with:
 - Device name
 - User email
@@ -514,6 +526,8 @@ To enable TLS inspection and HTTP filtering, install the Cloudflare root certifi
 ### 8.1 Download Certificate
 
 **Go to:** Traffic policies > Traffic settings > Certificates
+
+![Traffic policies > Traffic settings > Certificates](./screenshots/auto/nav-traffic-policies-traffic-settings-certificates.png)
 
 ![Traffic policies > Traffic settings > Certificates](./screenshots/auto/nav-traffic-policies-traffic-settings-certificates.png)
 
@@ -917,6 +931,8 @@ Lists let you manage values centrally and reuse them across policies.
 
 ![Reusable components > Lists](./screenshots/auto/nav-reusable-components-lists.png)
 
+![Reusable components > Lists](./screenshots/auto/nav-reusable-components-lists.png)
+
 1. Click **Create a list**
 2. Choose list type (Domain, URL, IP, etc.)
 3. Enter values (one per line or upload CSV)
@@ -1233,6 +1249,8 @@ Now that you understand rule expressions, apply them in:
 
 ![Traffic policies > Firewall policies](./screenshots/auto/nav-traffic-policies-firewall-policies.png)
 
+![Traffic policies > Firewall policies](./screenshots/auto/nav-traffic-policies-firewall-policies.png)
+
 1. Open https://one.dash.cloudflare.com/
 2. In the left sidebar, click **Traffic policies**
 3. Click **Firewall policies**
@@ -1440,6 +1458,8 @@ Customize the page users see when blocked.
 
 ![Reusable components > Custom pages](./screenshots/auto/nav-reusable-components-custom-pages.png)
 
+![Reusable components > Custom pages](./screenshots/auto/nav-reusable-components-custom-pages.png)
+
 ### 8.2 Customize Block Page
 
 **Options:**
@@ -1452,6 +1472,8 @@ Customize the page users see when blocked.
 ### 8.3 Enable Block Page
 
 **Go to:** Reusable components > Custom pages
+
+![Reusable components > Custom pages](./screenshots/auto/nav-reusable-components-custom-pages.png)
 
 ![Reusable components > Custom pages](./screenshots/auto/nav-reusable-components-custom-pages.png)
 
@@ -1499,6 +1521,8 @@ This official Cloudflare page helps you verify your Zero Trust configuration is 
 
 ![Insights > Logs (DNS tab)](./screenshots/auto/nav-insights-logs.png)
 
+![Insights > Logs (DNS tab)](./screenshots/auto/nav-insights-logs.png)
+
 You should see:
 - Allowed queries (green)
 - Blocked queries (red)
@@ -1513,6 +1537,8 @@ Filter DNS for specific office locations.
 ### 10.1 Add DNS Location
 
 **Go to:** Networks > Resolvers & Proxies > DNS Locations
+
+![Networks > Resolvers & Proxies > DNS Locations](./screenshots/auto/nav-networks-resolvers-and-proxies-dns-locations.png)
 
 ![Networks > Resolvers & Proxies > DNS Locations](./screenshots/auto/nav-networks-resolvers-and-proxies-dns-locations.png)
 
@@ -1857,6 +1883,8 @@ In the next module, you will set up HTTP policies for deeper traffic inspection.
 
 ![Traffic policies > Traffic settings](./screenshots/auto/nav-traffic-policies-traffic-settings.png)
 
+![Traffic policies > Traffic settings](./screenshots/auto/nav-traffic-policies-traffic-settings.png)
+
 1. Open https://one.dash.cloudflare.com/
 2. In the left sidebar, click **Traffic policies**
 3. Click **Traffic settings**
@@ -1895,6 +1923,8 @@ Before enabling TLS inspection:
 
 ![Traffic policies > Traffic settings](./screenshots/auto/nav-traffic-policies-traffic-settings.png)
 
+![Traffic policies > Traffic settings](./screenshots/auto/nav-traffic-policies-traffic-settings.png)
+
 Under **Proxy and inspection settings**, turn on: **TLS decryption**
 
 ### 2.3 Configure TLS Settings
@@ -1916,6 +1946,8 @@ Block access to security threats at the HTTP level.
 ### 3.1 Access HTTP Policies
 
 **Go to:** Traffic policies > Firewall policies
+
+![Traffic policies > Firewall policies](./screenshots/auto/nav-traffic-policies-firewall-policies.png)
 
 ![Traffic policies > Firewall policies](./screenshots/auto/nav-traffic-policies-firewall-policies.png)
 
@@ -2085,6 +2117,8 @@ Some applications break when TLS is inspected. Create bypass rules.
 
 ![Traffic policies > Firewall policies > HTTP](./screenshots/auto/nav-traffic-policies-firewall-policies-http.png)
 
+![Traffic policies > Firewall policies > HTTP](./screenshots/auto/nav-traffic-policies-firewall-policies-http.png)
+
 1. Click **"Add a policy"**
 2. **Name:** `Do Not Inspect - Certificate Pinned Apps`
 
@@ -2157,6 +2191,8 @@ Isolate risky websites in a remote browser.
 ### 10.3 Check HTTP Logs
 
 **Go to:** Insights > Logs (HTTP tab)
+
+![Insights > Logs (HTTP tab)](./screenshots/auto/nav-insights-logs.png)
 
 ![Insights > Logs (HTTP tab)](./screenshots/auto/nav-insights-logs.png)
 
@@ -2382,6 +2418,8 @@ Before enabling AV scanning:
 
 ![Traffic policies > Traffic settings](./screenshots/auto/nav-traffic-policies-traffic-settings.png)
 
+![Traffic policies > Traffic settings](./screenshots/auto/nav-traffic-policies-traffic-settings.png)
+
 1. Open https://one.dash.cloudflare.com/
 2. In the left sidebar, click **Traffic policies**
 3. Click **Traffic settings**
@@ -2447,6 +2485,8 @@ When a malicious file is blocked, users will see:
 
 ![Traffic policies > Firewall policies > HTTP](./screenshots/auto/nav-traffic-policies-firewall-policies-http.png)
 
+![Traffic policies > Firewall policies > HTTP](./screenshots/auto/nav-traffic-policies-firewall-policies-http.png)
+
 1. Click **"Add a policy"**
 2. **Name:** `Block Downloads from Risky Sites`
 
@@ -2488,6 +2528,8 @@ Some legitimate files may trigger false positives.
 ### 5.1 Create Do Not Scan Policy
 
 **Go to:** Traffic policies > Firewall policies > HTTP
+
+![Traffic policies > Firewall policies > HTTP](./screenshots/auto/nav-traffic-policies-firewall-policies-http.png)
 
 ![Traffic policies > Firewall policies > HTTP](./screenshots/auto/nav-traffic-policies-firewall-policies-http.png)
 
@@ -2560,6 +2602,8 @@ Files that cannot be scanned:
 
 ![Insights > Logs (HTTP tab)](./screenshots/auto/nav-insights-logs.png)
 
+![Insights > Logs (HTTP tab)](./screenshots/auto/nav-insights-logs.png)
+
 ### 7.2 Filter for AV Events
 
 Use filters:
@@ -2621,6 +2665,8 @@ Save as `eicar.com` or `eicar.txt`
 
 ![Insights > Logs (HTTP tab)](./screenshots/auto/nav-insights-logs.png)
 
+![Insights > Logs (HTTP tab)](./screenshots/auto/nav-insights-logs.png)
+
 Look for:
 - Action: Block
 - File name: eicar
@@ -2640,6 +2686,8 @@ Check logs for:
 ### 9.2 Create Exception Policy
 
 **Go to:** Traffic policies > Firewall policies > HTTP
+
+![Traffic policies > Firewall policies > HTTP](./screenshots/auto/nav-traffic-policies-firewall-policies-http.png)
 
 ![Traffic policies > Firewall policies > HTTP](./screenshots/auto/nav-traffic-policies-firewall-policies-http.png)
 
@@ -3010,6 +3058,8 @@ Add these to **Exclude** list for compatibility:
 
 ![Reusable components > Custom pages](./screenshots/auto/nav-reusable-components-custom-pages.png)
 
+![Reusable components > Custom pages](./screenshots/auto/nav-reusable-components-custom-pages.png)
+
 ### 6.2 Available Custom Pages
 
 | Page Type | Description |
@@ -3335,6 +3385,8 @@ The easiest way to create a tunnel is through the Cloudflare dashboard, which pr
 
 ![Networks > Connectors](./screenshots/auto/nav-networks-connectors.png)
 
+![Networks > Connectors](./screenshots/auto/nav-networks-connectors.png)
+
 1. Click **"Create a tunnel"**
 2. Select **"Cloudflared"** as the connector type
 3. Click **"Next"**
@@ -3424,6 +3476,8 @@ Repeat the process to add more applications:
 
 ![Networks > Connectors](./screenshots/auto/nav-networks-connectors.png)
 
+![Networks > Connectors](./screenshots/auto/nav-networks-connectors.png)
+
 Your tunnel should show:
 - **Status:** Healthy (green)
 - **Connectors:** 1 (or more)
@@ -3438,6 +3492,8 @@ Protect your application with Access policies.
 ### 4.1 Add Application
 
 **Go to:** Access controls > Applications
+
+![Access controls > Applications](./screenshots/auto/nav-access-controls-applications.png)
 
 ![Access controls > Applications](./screenshots/auto/nav-access-controls-applications.png)
 
@@ -3510,6 +3566,8 @@ Reusable groups for policies.
 
 ![Access controls > Policies](./screenshots/auto/nav-access-controls-policies.png)
 
+![Access controls > Policies](./screenshots/auto/nav-access-controls-policies.png)
+
 1. Click **"Add a group"**
 2. **Name:** Employees
 
@@ -3541,6 +3599,8 @@ Require device security checks.
 ### 7.1 Access Device Posture
 
 **Go to:** Reusable components > Posture checks
+
+![Reusable components > Posture checks](./screenshots/auto/nav-reusable-components-posture-checks.png)
 
 ![Reusable components > Posture checks](./screenshots/auto/nav-reusable-components-posture-checks.png)
 
@@ -3594,6 +3654,8 @@ Add to your Access policy:
 
 ![Insights > Logs (Access tab)](./screenshots/auto/nav-insights-logs.png)
 
+![Insights > Logs (Access tab)](./screenshots/auto/nav-insights-logs.png)
+
 View:
 - Successful authentications
 - Blocked attempts
@@ -3612,6 +3674,8 @@ Access entire private networks, not just specific apps.
 
 ![Networks > Connectors > Your Tunnel](./screenshots/auto/nav-networks-connectors.png)
 
+![Networks > Connectors > Your Tunnel](./screenshots/auto/nav-networks-connectors.png)
+
 1. Go to **"Private Network"** tab
 2. Click **"Add a private network"**
 3. Enter CIDR range: `192.168.1.0/24`
@@ -3620,6 +3684,8 @@ Access entire private networks, not just specific apps.
 ### 9.2 Configure Split Tunnel
 
 **Go to:** Team & Resources > Devices
+
+![Team & Resources > Devices](./screenshots/auto/nav-team-and-resources-devices.png)
 
 ![Team & Resources > Devices](./screenshots/auto/nav-team-and-resources-devices.png)
 
@@ -4707,6 +4773,8 @@ Export key metrics to your monitoring tools:
 
 ![Insights > Logs](./screenshots/auto/nav-insights-logs.png)
 
+![Insights > Logs](./screenshots/auto/nav-insights-logs.png)
+
 | Log Type | Description | Dataset |
 |----------|-------------|--------|
 | **Admin activity logs** | Monitor when a member creates, updates, or deletes configurations | Audit logs |
@@ -5139,6 +5207,8 @@ Before configuring DLP:
 
 ![Data loss prevention > Profiles](./screenshots/auto/nav-data-loss-prevention-profiles.png)
 
+![Data loss prevention > Profiles](./screenshots/auto/nav-data-loss-prevention-profiles.png)
+
 1. Open https://one.dash.cloudflare.com/
 2. In the left sidebar, click **Data loss prevention**
 3. Click **Profiles**
@@ -5242,6 +5312,8 @@ Apply DLP profiles to HTTP traffic.
 ### 5.1 Access HTTP Policies
 
 **Go to:** Traffic policies > Firewall policies > HTTP
+
+![Traffic policies > Firewall policies > HTTP](./screenshots/auto/nav-traffic-policies-firewall-policies-http.png)
 
 ![Traffic policies > Firewall policies > HTTP](./screenshots/auto/nav-traffic-policies-firewall-policies-http.png)
 
@@ -5355,6 +5427,8 @@ Log the actual content that triggered DLP.
 
 ![Traffic policies > Traffic settings](./screenshots/auto/nav-traffic-policies-traffic-settings.png)
 
+![Traffic policies > Traffic settings](./screenshots/auto/nav-traffic-policies-traffic-settings.png)
+
 Under **Payload logging**, turn on: **Enable payload logging**
 
 ### 9.2 Configure Retention
@@ -5367,6 +5441,8 @@ Set how long to retain payload logs:
 ### 9.3 Access Payload Logs
 
 **Go to:** Insights > Logs (HTTP tab)
+
+![Insights > Logs (HTTP tab)](./screenshots/auto/nav-insights-logs.png)
 
 ![Insights > Logs (HTTP tab)](./screenshots/auto/nav-insights-logs.png)
 
@@ -5398,6 +5474,8 @@ Click on a DLP event to see:
 
 ![Insights > Logs (HTTP tab)](./screenshots/auto/nav-insights-logs.png)
 
+![Insights > Logs (HTTP tab)](./screenshots/auto/nav-insights-logs.png)
+
 Filter by:
 - DLP Profile matched
 - Action: Block or Allow
@@ -5409,6 +5487,8 @@ Filter by:
 ### 11.1 Access Analytics
 
 **Go to:** Insights > Dashboards
+
+![Insights > Dashboards](./screenshots/auto/nav-insights-dashboards.png)
 
 ![Insights > Dashboards](./screenshots/auto/nav-insights-dashboards.png)
 
@@ -5664,6 +5744,8 @@ In the next module, you will configure device posture checks to ensure device se
 
 ![Integrations > Cloud & SaaS](./screenshots/auto/nav-integrations-cloud-and-saas.png)
 
+![Integrations > Cloud & SaaS](./screenshots/auto/nav-integrations-cloud-and-saas.png)
+
 1. Open https://one.dash.cloudflare.com/
 2. In the left sidebar, click **Integrations**
 3. Click **Cloud & SaaS**
@@ -5744,6 +5826,8 @@ Click **"Save"**
 ### 4.1 Access Findings
 
 **Go to:** Cloud & SaaS findings > Posture Findings
+
+![Cloud & SaaS findings > Posture Findings](./screenshots/auto/nav-cloud-and-saas-findings-posture-findings.png)
 
 ![Cloud & SaaS findings > Posture Findings](./screenshots/auto/nav-cloud-and-saas-findings-posture-findings.png)
 
@@ -5850,6 +5934,8 @@ Scan files in SaaS apps for sensitive data.
 
 ![Cloud & SaaS findings > Posture Findings](./screenshots/auto/nav-cloud-and-saas-findings-posture-findings.png)
 
+![Cloud & SaaS findings > Posture Findings](./screenshots/auto/nav-cloud-and-saas-findings-posture-findings.png)
+
 Filter by: **DLP**
 
 You'll see files containing:
@@ -5875,6 +5961,8 @@ Gateway analyzes HTTP traffic to identify:
 ### 8.2 View Shadow IT Report
 
 **Go to:** Insights > Dashboards
+
+![Insights > Dashboards](./screenshots/auto/nav-insights-dashboards.png)
 
 ![Insights > Dashboards](./screenshots/auto/nav-insights-dashboards.png)
 

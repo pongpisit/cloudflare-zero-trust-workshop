@@ -297,6 +297,8 @@ Lists let you manage values centrally and reuse them across policies.
 
 **Go to:** Reusable components > Lists
 
+![Reusable components > Lists](./screenshots/auto/nav-reusable-components-lists.png)
+
 1. Click **Create a list**
 2. Choose list type (Domain, URL, IP, etc.)
 3. Enter values (one per line or upload CSV)

@@ -63,6 +63,8 @@ Before configuring DLP:
 
 **Go to:** Data loss prevention > Profiles
 
+![Data loss prevention > Profiles](./screenshots/auto/nav-data-loss-prevention-profiles.png)
+
 1. Open https://one.dash.cloudflare.com/
 2. In the left sidebar, click **Data loss prevention**
 3. Click **Profiles**
@@ -166,6 +168,8 @@ Apply DLP profiles to HTTP traffic.
 ### 5.1 Access HTTP Policies
 
 **Go to:** Traffic policies > Firewall policies > HTTP
+
+![Traffic policies > Firewall policies > HTTP](./screenshots/auto/nav-traffic-policies-firewall-policies-http.png)
 
 ### 5.2 Create Block Policy for Credit Cards
 
@@ -275,6 +279,8 @@ Log the actual content that triggered DLP.
 
 **Go to:** Traffic policies > Traffic settings
 
+![Traffic policies > Traffic settings](./screenshots/auto/nav-traffic-policies-traffic-settings.png)
+
 Under **Payload logging**, turn on: **Enable payload logging**
 
 ### 9.2 Configure Retention
@@ -287,6 +293,8 @@ Set how long to retain payload logs:
 ### 9.3 Access Payload Logs
 
 **Go to:** Insights > Logs (HTTP tab)
+
+![Insights > Logs (HTTP tab)](./screenshots/auto/nav-insights-logs.png)
 
 Click on a DLP event to see:
 - Matched pattern
@@ -314,6 +322,8 @@ Click on a DLP event to see:
 
 **Go to:** Insights > Logs (HTTP tab)
 
+![Insights > Logs (HTTP tab)](./screenshots/auto/nav-insights-logs.png)
+
 Filter by:
 - DLP Profile matched
 - Action: Block or Allow
@@ -325,6 +335,8 @@ Filter by:
 ### 11.1 Access Analytics
 
 **Go to:** Insights > Dashboards
+
+![Insights > Dashboards](./screenshots/auto/nav-insights-dashboards.png)
 
 ### 11.2 DLP Metrics
 

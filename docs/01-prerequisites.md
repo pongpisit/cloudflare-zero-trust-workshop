@@ -45,6 +45,8 @@ https://dash.cloudflare.com/sign-up
 https://dash.cloudflare.com/
 ```
 
+![https://dash.cloudflare.com/](./screenshots/auto/nav-https-dash-cloudflare-com.png)
+
 You should see the Cloudflare Dashboard.
 
 ---
@@ -101,6 +103,8 @@ Before users can enroll devices, you need to set up authentication.
 
 **Go to:** Integrations > Identity providers
 
+![Integrations > Identity providers](./screenshots/auto/nav-integrations-identity-providers.png)
+
 1. Open https://one.dash.cloudflare.com/
 2. In the left sidebar, click **Integrations**
 3. Click **Identity providers**
@@ -124,6 +128,8 @@ Supported identity providers:
 
 **Go to:** Integrations > Identity providers > Add new identity provider
 
+![Integrations > Identity providers > Add new identity provider](./screenshots/auto/nav-integrations-identity-providers.png)
+
 ---
 
 ## Step 4: Configure Device Enrollment
@@ -133,6 +139,8 @@ Define who can enroll devices in your organization.
 ### 4.1 Create Enrollment Rule
 
 **Go to:** Team & Resources > Devices > Management > Device enrollment
+
+![Team & Resources > Devices > Management > Device enrollment](./screenshots/auto/nav-team-and-resources-devices-management-device-enrollment.png)
 
 1. In the left sidebar, click **Team & Resources**
 2. Click **Devices**
@@ -165,6 +173,8 @@ The WARP client connects your device to Cloudflare Zero Trust.
 ### 5.1 Download WARP Client
 
 **Go to:** https://one.one.one.one/
+
+![https://one.one.one.one/](./screenshots/auto/nav-https-one-one-one-one.png)
 
 Or download directly:
 
@@ -234,6 +244,8 @@ Back in the WARP client:
 
 **Go to:** Team & Resources > Devices
 
+![Team & Resources > Devices](./screenshots/auto/nav-team-and-resources-devices.png)
+
 You should see your device listed with:
 - Device name
 - User email
@@ -250,6 +262,8 @@ To enable TLS inspection and HTTP filtering, install the Cloudflare root certifi
 ### 8.1 Download Certificate
 
 **Go to:** Traffic policies > Traffic settings > Certificates
+
+![Traffic policies > Traffic settings > Certificates](./screenshots/auto/nav-traffic-policies-traffic-settings-certificates.png)
 
 Or download directly from:
 ```
