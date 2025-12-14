@@ -36,17 +36,12 @@ Get basic DNS filtering, HTTP protection, and AV scanning in 30 minutes.
 | 07 | [Browser Isolation (Agentless ZTNA)](./docs/10-browser-isolation.md) | 45 min | Access internal apps without WARP |
 | 08 | [Logs & Analytics](./docs/08-logs-analytics.md) | 30 min | Monitoring, alerts, 90-day retention |
 | 09 | [Workshop Summary](./docs/09-workshop-summary.md) | 15 min | Review, next steps |
+| 10 | [Data Loss Prevention (Optional)](./docs/05-dlp.md) | 45 min | Sensitive data detection |
+| 11 | [CASB (Optional)](./docs/11-casb-optional.md) | 45 min | SaaS security, shadow IT |
 
-**Core Duration:** ~6 hours (or 30 min for Quick Start)
+**Core Duration:** ~6 hours (Modules 00-09) | **With Optional:** ~7.5 hours
 
-### Optional Modules
-
-| Module | Topic | Duration | Features |
-|--------|-------|----------|----------|
-| A | [Data Loss Prevention (Optional)](./docs/05-dlp.md) | 45 min | Sensitive data detection |
-| B | [CASB (Optional)](./docs/11-casb-optional.md) | 45 min | SaaS security, shadow IT (requires integration) |
-
-> **Note:** DLP and CASB modules are optional. CASB requires API integration with SaaS applications (Microsoft 365, Google Workspace, etc.).
+> **Note:** Modules 10-11 are optional. CASB requires API integration with SaaS applications (Microsoft 365, Google Workspace, etc.).
 
 ## What You Will Learn
 
