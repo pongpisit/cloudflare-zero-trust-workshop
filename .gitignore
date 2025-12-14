@@ -7,3 +7,4 @@ package.json
 package-lock.json
 .DS_Store
 docs/screenshots/auto/_manifest.json
+docs/00-11-workshop-full.md

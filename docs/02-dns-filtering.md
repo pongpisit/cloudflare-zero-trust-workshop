@@ -265,13 +265,17 @@ Customize the page users see when blocked.
 - **Background color:** Choose your brand color
 - **Support email:** helpdesk@yourcompany.com
 
-### 8.3 Enable Block Page
+### 8.3 Enable Block Page in Policy
 
-**Go to:** Reusable components > Custom pages
+To use the block page, you must enable it **within each policy** that should display it.
 
-![Reusable components > Custom pages](./screenshots/auto/nav-reusable-components-custom-pages.png)
+1. Edit your DNS or HTTP policy
+2. In **Step 4: Configure policy settings**, find **Modify Gateway block behavior**
+3. Select **Use account-level block setting**
+4. Optionally check **Add an additional message to your custom block page when traffic matches this policy**
+5. Enter a custom message (e.g., "This is block message.")
 
-Enable: **Display block page**
+![Policy Block Page Settings](./screenshots/auto/policy-block-page-settings.png)
 
 > **Note:** Block page requires TLS inspection to be enabled for HTTPS sites.
 
