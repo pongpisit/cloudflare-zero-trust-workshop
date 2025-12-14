@@ -1,15 +1,31 @@
-# Module 10: Clientless Web Isolation (Browser Isolation)
+# Module 07: Browser Isolation (Agentless ZTNA)
 
-**Duration:** 30 minutes
+**Duration:** 45 minutes
 
 ## What You Will Learn
 
-- Understand Browser Isolation concepts
+- Understand Browser Isolation and Agentless ZTNA concepts
+- **Access internal applications without installing WARP agent**
 - Set up Clientless Web Isolation (no agent required)
 - Configure access policies for isolated browsing
 - Control browser permissions (copy, paste, print)
-- Access internal applications through isolation
 - Test isolated browsing experience
+
+---
+
+## Why Agentless ZTNA?
+
+**Problem:** Not all users can install the WARP agent:
+- Contractors on personal devices
+- Partners with managed devices (can't install software)
+- BYOD users who don't want corporate software
+- Quick access needed without deployment
+
+**Solution:** Browser Isolation provides **agentless ZTNA**:
+- Access internal apps through any browser
+- No software installation required
+- Same Zero Trust security policies apply
+- Works on any device (laptop, tablet, phone)
 
 ---
 
@@ -41,10 +57,12 @@
 ```
 
 **Benefits:**
+- **Agentless ZTNA** - Access internal apps without WARP
 - Zero-day threat protection
 - No malware can reach user's device
 - Safe access to risky websites
 - No agent installation required (Clientless)
+- Works on any device with a modern browser
 
 ---
 
@@ -180,7 +198,7 @@ Click **Save**
 
 ### 5.3 Use Isolated Browser
 
-1. You should see the **Address Bar** (TOR 5.2.7)
+1. You should see the **Address Bar**
 2. Enter a URL to visit: `https://www.google.com`
 3. The website loads in isolated environment
 
@@ -247,7 +265,7 @@ Automatically isolate risky websites.
 
 ### 7.1 Create HTTP Policy for Isolation
 
-1. Go to **Gateway** > **Firewall Policies** > **HTTP**
+1. Go to **Traffic Policies** > **HTTP**
 2. Click **Add a policy**
 3. **Name:** `Isolate Risky Categories`
 
@@ -273,7 +291,7 @@ Click **Create policy**
 
 ---
 
-## Supported Browsers (TOR 5.2.3)
+## Supported Browsers
 
 | Browser | Support |
 |---------|---------|
@@ -286,29 +304,40 @@ Click **Create policy**
 
 ## Use Cases
 
-### 1. Secure Access to Untrusted Sites
+### 1. Agentless ZTNA (Primary Use Case)
 
-- Research on potentially malicious sites
-- Accessing unknown links from emails
-- Browsing newly registered domains
+**Access internal applications without WARP agent:**
+- Contractors accessing internal tools
+- Partners viewing shared dashboards
+- Employees on personal devices
+- Quick access from any browser
+
+**How it works:**
+1. User opens Browser Isolation URL
+2. Authenticates with email OTP or IdP
+3. Types internal app URL in isolated browser
+4. Cloudflare Tunnel routes traffic to internal app
+5. User sees the app - no agent needed!
 
 ### 2. Contractor/Guest Access
 
-- Provide secure browsing without agent
+- Provide secure access without agent installation
 - Time-limited access via Access policies
 - No software installation required
+- Revoke access instantly
 
 ### 3. BYOD (Bring Your Own Device)
 
 - Secure access from personal devices
 - No corporate software needed
 - Isolation protects both user and company
+- Users keep their privacy
 
-### 4. Internal Application Access
+### 4. Secure Access to Untrusted Sites
 
-- Access internal apps from anywhere
-- No VPN required
-- Works on any device with a browser
+- Research on potentially malicious sites
+- Accessing unknown links from emails
+- Browsing newly registered domains
 
 ---
 

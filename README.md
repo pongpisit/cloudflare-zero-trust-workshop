@@ -31,22 +31,22 @@ Get basic DNS filtering, HTTP protection, and AV scanning in 30 minutes.
 | 02 | [DNS Filtering](./docs/02-dns-filtering.md) | 45 min | DNS policies, content categories |
 | 03 | [Secure Web Gateway](./docs/03-secure-web-gateway.md) | 60 min | HTTP policies, TLS inspection |
 | 04 | [Anti-Virus & File Scanning](./docs/04-antivirus-scanning.md) | 30 min | Malware protection |
-| 05 | [Data Loss Prevention](./docs/05-dlp.md) | 45 min | Sensitive data detection |
-| 06 | [Device Posture](./docs/06-device-posture.md) | 30 min | Device security, WARP settings |
-| 07 | [Zero Trust Network Access](./docs/07-ztna.md) | 60 min | Access policies, private apps |
+| 05 | [Device Posture](./docs/06-device-posture.md) | 30 min | Device security, WARP settings |
+| 06 | [Zero Trust Network Access](./docs/07-ztna.md) | 60 min | Access policies, private apps (with WARP) |
+| 07 | [Browser Isolation (Agentless ZTNA)](./docs/10-browser-isolation.md) | 45 min | Access internal apps without WARP |
 | 08 | [Logs & Analytics](./docs/08-logs-analytics.md) | 30 min | Monitoring, alerts, 90-day retention |
 | 09 | [Workshop Summary](./docs/09-workshop-summary.md) | 15 min | Review, next steps |
-| 10 | [Browser Isolation](./docs/10-browser-isolation.md) | 30 min | Clientless web isolation |
 
-**Core Duration:** ~7 hours (or 30 min for Quick Start)
+**Core Duration:** ~6 hours (or 30 min for Quick Start)
 
 ### Optional Modules
 
 | Module | Topic | Duration | Features |
 |--------|-------|----------|----------|
-| 11 | [CASB (Optional)](./docs/11-casb-optional.md) | 45 min | SaaS security, shadow IT (requires integration) |
+| A | [Data Loss Prevention (Optional)](./docs/05-dlp.md) | 45 min | Sensitive data detection |
+| B | [CASB (Optional)](./docs/11-casb-optional.md) | 45 min | SaaS security, shadow IT (requires integration) |
 
-> **Note:** CASB module requires API integration with SaaS applications (Microsoft 365, Google Workspace, etc.). Skip if you don't have these integrations available.
+> **Note:** DLP and CASB modules are optional. CASB requires API integration with SaaS applications (Microsoft 365, Google Workspace, etc.).
 
 ## What You Will Learn
 
@@ -56,9 +56,8 @@ Get basic DNS filtering, HTTP protection, and AV scanning in 30 minutes.
 - Configure Secure Web Gateway (SWG) with HTTP policies
 - Enable TLS inspection for deep packet analysis
 - Set up anti-virus scanning for file uploads/downloads
-- Implement Data Loss Prevention (DLP) policies
-- Integrate CASB for SaaS application security
 - Configure Zero Trust Network Access (ZTNA) for private applications
+- Use Browser Isolation for agentless ZTNA (no WARP required)
 - Monitor with logs, analytics, and alerts
 - Enforce device posture and compliance
 
@@ -113,19 +112,7 @@ Get basic DNS filtering, HTTP protection, and AV scanning in 30 minutes.
 - File upload/download protection
 - Threat intelligence integration
 
-### Data Loss Prevention (Module 05)
-- Predefined DLP profiles
-- Custom detection patterns
-- Credit card, SSN, API key detection
-- Block or log sensitive data
-
-### CASB (Module 06)
-- SaaS application discovery
-- Misconfiguration detection
-- Shadow IT visibility
-- Integration with Microsoft 365, Google Workspace
-
-### ZTNA (Module 07)
+### ZTNA (Module 06)
 - Replace VPN with Zero Trust
 - Application-level access control
 - Identity-based policies
@@ -154,8 +141,7 @@ By completing this workshop, your organization will have:
 | DNS Filtering | Blocking malicious domains |
 | Web Gateway | Inspecting all HTTP/HTTPS traffic |
 | Anti-Virus | Scanning files in real-time |
-| DLP | Protecting sensitive data |
-| CASB | Securing SaaS applications |
+| Browser Isolation | Agentless access to internal apps |
 | ZTNA | Zero Trust access to private apps |
 
 **All managed from a single dashboard, powered by the world's largest network.**
