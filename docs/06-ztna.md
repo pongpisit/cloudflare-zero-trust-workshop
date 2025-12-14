@@ -370,8 +370,10 @@ Access entire private networks, not just specific apps.
 
 1. Edit your device profile
 2. Go to **"Split Tunnels"**
-3. Select **"Include IPs and domains"**
-4. Add your private network CIDR
+3. Select **"Exclude IPs and domains"** or **"Include IPs and domains"** based on your needs
+4. Add your private network CIDR or domains
+
+![Split Tunnel Exclude Example](./screenshots/auto/split-tunnel-exclude-example.png)
 
 ### 9.3 Access Private Resources
 
