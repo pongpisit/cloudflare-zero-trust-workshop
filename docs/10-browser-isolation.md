@@ -265,7 +265,7 @@ Automatically isolate risky websites.
 
 ### 7.1 Create HTTP Policy for Isolation
 
-1. Go to **Traffic Policies** > **HTTP**
+1. Go to **Traffic policies** > **Firewall policies** > **HTTP**
 2. Click **Add a policy**
 3. **Name:** `Isolate Risky Categories`
 

@@ -134,7 +134,7 @@ When a malicious file is blocked, users will see:
 
 ### 4.1 Block Downloads from Untrusted Sources
 
-**Go to:** Traffic Policies > HTTP
+**Go to:** Traffic policies > Firewall policies > HTTP
 
 1. Click **"Add a policy"**
 2. **Name:** `Block Downloads from Risky Sites`
@@ -176,7 +176,7 @@ Some legitimate files may trigger false positives.
 
 ### 5.1 Create Do Not Scan Policy
 
-**Go to:** Traffic Policies > HTTP
+**Go to:** Traffic policies > Firewall policies > HTTP
 
 1. Click **"Add a policy"**
 2. **Name:** `Do Not Scan - Development Tools`
@@ -318,7 +318,7 @@ Check logs for:
 
 ### 9.2 Create Exception Policy
 
-**Go to:** Traffic Policies > HTTP
+**Go to:** Traffic policies > Firewall policies > HTTP
 
 1. Click **"Add a policy"**
 2. **Name:** `Allow Known Good File`

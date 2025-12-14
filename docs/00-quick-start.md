@@ -69,7 +69,7 @@ Or direct links:
 ### 3.1 Create DNS Policy
 
 1. Go to https://one.dash.cloudflare.com/
-2. Click **Traffic Policies**
+2. Click **Traffic policies** > **Firewall policies**
 3. Select **DNS** tab
 4. Click **Add a policy**
 
@@ -100,7 +100,7 @@ Or direct links:
 
 ### 4.2 Create HTTP Policy
 
-1. Go to **Traffic Policies**
+1. Go to **Traffic policies** > **Firewall policies**
 2. Select **HTTP** tab
 3. Click **Add a policy**
 

@@ -163,7 +163,7 @@ Apply DLP profiles to HTTP traffic.
 
 ### 5.1 Access HTTP Policies
 
-**Go to:** Traffic Policies > HTTP
+**Go to:** Traffic policies > Firewall policies > HTTP
 
 ### 5.2 Create Block Policy for Credit Cards
 

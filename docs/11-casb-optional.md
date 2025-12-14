@@ -303,7 +303,7 @@ For each application, see:
 ### 8.5 Block Unauthorized Apps
 
 1. Identify high-risk unauthorized app
-2. Go to Traffic Policies > HTTP
+2. Go to Traffic policies > Firewall policies > HTTP
 3. Create block policy:
 
 | Selector | Operator | Value |

@@ -45,11 +45,12 @@
 
 ## Step 1: Access DNS Policies
 
-**Go to:** Zero Trust Dashboard > Traffic Policies > DNS
+**Go to:** Traffic policies > Firewall policies
 
 1. Open https://one.dash.cloudflare.com/
-2. In the left sidebar, click **Traffic Policies**
-3. Select the **DNS** tab
+2. In the left sidebar, click **Traffic policies**
+3. Click **Firewall policies**
+4. Select the **DNS** tab
 
 You will see the DNS policies page where you can create and manage policies.
 
