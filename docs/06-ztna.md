@@ -169,6 +169,10 @@ Repeat the process to add more applications:
 
 ![Networks > Connectors](./screenshots/auto/nav-networks-connectors.png)
 
+Click on your tunnel to view connector details:
+
+![ZTNA Connector Status](./screenshots/auto/ztna-connector-status.png)
+
 Your tunnel should show:
 - **Status:** Healthy (green)
 - **Connectors:** 1 (or more)
