@@ -1,4 +1,4 @@
-# Module 06: Device Posture & WARP Settings
+# Module 05: Device Posture & WARP Settings
 
 **Duration:** 30 minutes
 
@@ -10,6 +10,8 @@
 - Set up Split Tunnels
 - Customize block pages
 - Manage device profiles
+
+> 💡 **3rd Party Integrations (Optional):** Device posture can integrate with endpoint security tools like CrowdStrike, SentinelOne, Carbon Black, and Tanium for advanced checks. These integrations are optional.
 
 ---
 

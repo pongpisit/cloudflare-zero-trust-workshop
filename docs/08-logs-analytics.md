@@ -8,7 +8,7 @@
 - Use Access logs for authentication events
 - Understand Analytics dashboards
 - Set up notifications and alerts
-- Export logs for SIEM integration
+- Export logs for SIEM integration (optional)
 - Configure log retention (90 days)
 - Troubleshoot common issues using logs
 

@@ -112,11 +112,14 @@ Before users can enroll devices, you need to set up authentication.
 
 ### 3.2 (Optional) Add Identity Provider
 
-For production environments, you can integrate with:
+> 💡 **3rd Party Integration:** For production environments, you can integrate with external identity providers. This is optional for the workshop.
+
+Supported identity providers:
 - Microsoft Azure AD / Entra ID
 - Google Workspace
 - Okta
 - OneLogin
+- SAML 2.0 providers
 - And many more
 
 **Go to:** Integrations > Identity providers > Add new identity provider

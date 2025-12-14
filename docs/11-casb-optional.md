@@ -1,6 +1,6 @@
-# Module 11 (Optional): CASB (Cloud Access Security Broker)
+# Module 11: CASB (Cloud Access Security Broker) - Optional
 
-> **Note:** This module is optional and requires API integration with SaaS applications like Microsoft 365 or Google Workspace. Skip this module if you don't have these integrations available.
+> ⚠️ **Optional Module:** This module requires API integration with SaaS applications (Microsoft 365, Google Workspace, Salesforce, etc.). Skip if you don't have these integrations available.
 
 **Duration:** 45 minutes
 

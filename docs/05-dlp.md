@@ -1,6 +1,8 @@
-# Module 05: Data Loss Prevention (DLP)
+# Module 10: Data Loss Prevention (DLP) - Optional
 
 **Duration:** 45 minutes
+
+> ⚠️ **Optional Module:** This module requires a DLP license. Skip if not available.
 
 ## What You Will Learn
 

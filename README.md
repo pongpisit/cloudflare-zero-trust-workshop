@@ -22,7 +22,7 @@ Get basic DNS filtering, HTTP protection, and AV scanning in 30 minutes.
 
 ## Workshop Overview
 
-### Core Modules
+### Core Modules (Required)
 
 | Module | Topic | Duration | Features |
 |--------|-------|----------|----------|
@@ -31,18 +31,34 @@ Get basic DNS filtering, HTTP protection, and AV scanning in 30 minutes.
 | 01a | [Understanding Rule Expressions](./docs/01a-rule-expressions.md) | 20 min | Signals, operators, lists, policy logic |
 | 02 | [DNS Filtering](./docs/02-dns-filtering.md) | 45 min | DNS policies, content categories |
 | 03 | [Secure Web Gateway](./docs/03-secure-web-gateway.md) | 60 min | HTTP policies, TLS inspection |
-| 04 | [Anti-Virus & File Scanning](./docs/04-antivirus-scanning.md) | 30 min | Malware protection |
+| 04 | [Anti-Virus & File Scanning](./docs/04-antivirus-scanning.md) | 30 min | Malware protection, file sandboxing |
 | 05 | [Device Posture](./docs/06-device-posture.md) | 30 min | Device security, WARP settings |
-| 06 | [Zero Trust Network Access](./docs/07-ztna.md) | 60 min | Access policies, private apps (with WARP) |
-| 07 | [Browser Isolation (Agentless ZTNA)](./docs/10-browser-isolation.md) | 45 min | Access internal apps without WARP |
-| 08 | [Logs & Analytics](./docs/08-logs-analytics.md) | 30 min | Monitoring, alerts, 90-day retention |
+| 06 | [Zero Trust Network Access](./docs/07-ztna.md) | 60 min | Cloudflare Tunnel, Access policies |
+| 07 | [Browser Isolation](./docs/10-browser-isolation.md) | 45 min | Agentless ZTNA, clientless access |
+| 08 | [Logs & Analytics](./docs/08-logs-analytics.md) | 30 min | Monitoring, alerts, 8 log types |
 | 09 | [Workshop Summary](./docs/09-workshop-summary.md) | 15 min | Review, next steps |
-| 10 | [Data Loss Prevention (Optional)](./docs/05-dlp.md) | 45 min | Sensitive data detection |
-| 11 | [CASB (Optional)](./docs/11-casb-optional.md) | 45 min | SaaS security, shadow IT |
 
-**Core Duration:** ~6 hours (Modules 00-09) | **With Optional:** ~7.5 hours
+**Core Duration:** ~6 hours
 
-> **Note:** Modules 10-11 are optional. CASB requires API integration with SaaS applications (Microsoft 365, Google Workspace, etc.).
+### Optional Modules
+
+| Module | Topic | Duration | Requirements |
+|--------|-------|----------|-------------|
+| 10 | [Data Loss Prevention](./docs/05-dlp.md) | 45 min | Requires DLP license |
+| 11 | [CASB](./docs/11-casb-optional.md) | 45 min | Requires SaaS API integration (Microsoft 365, Google Workspace, etc.) |
+
+> **Note:** Optional modules require additional licensing or 3rd party integrations.
+
+### 3rd Party Integrations (Optional)
+
+These features require integration with external services:
+
+| Feature | Integration | Where Used |
+|---------|-------------|------------|
+| **Identity Providers** | Azure AD, Okta, Google Workspace, OneLogin | Module 01 - Authentication |
+| **Device Posture** | CrowdStrike, SentinelOne, Carbon Black, Tanium | Module 05 - Endpoint security checks |
+| **CASB** | Microsoft 365, Google Workspace, Salesforce, Slack | Module 11 - SaaS security |
+| **SIEM Export** | Splunk, Datadog, Sumo Logic, S3 | Module 08 - Log export |
 
 ## What You Will Learn
 
@@ -148,4 +164,4 @@ By completing this workshop, your organization will have:
 
 **Author:** Pongpisit
 
-**Last Updated:** December 2024
+**Last Updated:** December 2025
