@@ -464,6 +464,7 @@ Export key metrics to your monitoring tools:
 | HTTP | Insights > Logs (HTTP tab) |
 | Network | Insights > Logs (Network tab) |
 | Access | Insights > Logs (Access tab) |
+| Posture | Insights > Logs (Posture logs tab) |
 
 ### Common Filters
 

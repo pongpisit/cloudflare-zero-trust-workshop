@@ -390,10 +390,11 @@ Before enforcing posture:
 
 ### "Posture check failing"
 
-1. Go to **Team & Resources** > **Devices**
-2. Find the device
-3. Check **Posture** tab for specific failure
-4. Remediate the issue on the device
+1. Go to **Insights** > **Logs** > **Posture logs**
+2. Find the device and check for specific failure
+3. Alternatively, go to **Team & Resources** > **Devices**
+4. Click on the device and check **Posture** tab
+5. Remediate the issue on the device
 
 ### "User can't connect"
 
