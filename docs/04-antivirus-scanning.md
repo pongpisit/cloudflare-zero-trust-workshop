@@ -61,7 +61,7 @@ Before enabling AV scanning:
 1. Open https://one.dash.cloudflare.com/
 2. In the left sidebar, click **Traffic policies**
 3. Click **Traffic settings**
-4. Scroll to **AV scanning** section
+4. Scroll to **Anti-virus scanning** section
 
 ### 1.2 Enable AV Scanning
 
@@ -69,62 +69,47 @@ Find the **"Anti-virus scanning"** section.
 
 Turn on: **Scan files for malware**
 
-### 1.3 Configure Scan Direction
+> **Note:** Gateway cannot scan files that are encrypted, password-protected, or larger than 15MB.
 
-Choose what to scan:
+### 1.3 Configure Scanning Behavior
+
+Choose scanning options:
 
 | Option | Description | Recommendation |
 |--------|-------------|----------------|
-| Scan uploads | Scan files being uploaded | Enable |
-| Scan downloads | Scan files being downloaded | Enable |
+| **Scan on file upload** | Scan files being uploaded | ✅ Enable |
+| **Scan on file download** | Scan files being downloaded | ✅ Enable |
+| **Block requests for files that cannot be scanned** | Block encrypted/corrupted files | ✅ Enable |
+| **Display a blocked file notification from the WARP Client** | Show notification to users | ✅ Enable |
 
-**Enable both** for maximum protection.
+**Enable all options** for maximum protection.
 
 ---
 
-## Step 2: Configure Scan Settings
+## Step 2: Configure File Sandboxing (Beta)
 
-### 2.1 File Size Limits
+### 2.1 Enable File Sandboxing
 
-**Maximum scannable file size:** 15 MB (Cloudflare limit)
+Turn on: **Open previously unseen files in a sandbox environment**
 
-Files larger than 15 MB cannot be scanned. Configure how to handle them:
-
-| Option | Description |
-|--------|-------------|
-| Allow | Let large files through without scanning |
-| Block | Block files that exceed scan limit |
-
-**Recommendation:** Block large files or create specific policies.
+This allows you to create HTTP policies using the **'Quarantine'** action. Gateway will:
+1. Scan files found in traffic matching these policies in a sandbox environment
+2. If the sandbox detects malicious activity, Gateway will block the download
 
 ### 2.2 Non-Scannable Files
 
-Some files cannot be scanned (encrypted, corrupted, unsupported format).
+Some files cannot be scanned (encrypted, password-protected, corrupted, unsupported format, or larger than 15MB).
 
-**Options:**
-- **Allow non-scannable files** - Let them through
-- **Block non-scannable files** - Block all non-scannable content
+Turn on: **Block requests for files that cannot be scanned**
 
-**Recommendation:** Block non-scannable files for high-security environments.
-
-### 2.3 Enable Setting
-
-Turn on: **Block requests containing non-scannable files**
+**Recommendation:** Enable this for high-security environments.
 
 ---
 
-## Step 3: Configure WARP Client Notifications
-
-Alert users when files are blocked.
-
-### 3.1 Enable Notifications
-
-Turn on: **Display AV block notification for WARP Client**
-
-### 3.2 What Users See
+## Step 3: What Users See When Files Are Blocked
 
 When a malicious file is blocked, users will see:
-- Desktop notification from WARP client
+- Desktop notification from WARP client (if enabled)
 - Block page in browser (if applicable)
 - Details about why the file was blocked
 
