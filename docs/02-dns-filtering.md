@@ -274,21 +274,17 @@ Enable: **"Display block page"**
 
 ### 9.1 Test Security Blocking
 
-**Try visiting a test malware domain:**
+**Try visiting the Cloudflare test page:**
 
 ```
-http://malware.testcategory.com
+https://help.one.cloudflare.com/
 ```
 
-You should see the block page or connection refused.
+This official Cloudflare page helps you verify your Zero Trust configuration is working correctly.
 
 ### 9.2 Test Category Blocking
 
-If you blocked adult content, try:
-
-```
-http://adult.testcategory.com
-```
+If you blocked adult content, the category should be blocked when users try to access adult sites.
 
 ### 9.3 Test Safe Search
 

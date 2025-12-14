@@ -174,7 +174,7 @@ You should see:
 
 ### Today
 - [ ] Install root certificate for full TLS inspection (Module 01, Step 8)
-- [ ] Test by visiting http://malware.testcategory.com (should be blocked)
+- [ ] Test by visiting https://help.one.cloudflare.com/ (verify Zero Trust is working)
 
 ### This Week
 - [ ] Roll out WARP to more devices
@@ -192,11 +192,11 @@ You should see:
 
 ### Test DNS Blocking
 
-Try visiting:
+Visit the Cloudflare test page:
 ```
-http://malware.testcategory.com
+https://help.one.cloudflare.com/
 ```
-Should be blocked.
+This verifies your Zero Trust configuration is working.
 
 ### Test AV Scanning
 
