@@ -310,7 +310,7 @@ Filter DNS for specific office locations.
 
 ### 10.1 Add DNS Location
 
-**Go to:** Networks > DNS Locations > Add a location
+**Go to:** Networks > Resolvers & Proxies > DNS Locations
 
 1. **Name:** `Main Office`
 2. **Note the DNS addresses provided:**
