@@ -373,7 +373,7 @@ Require device security checks.
 
 ### 10.1 Access Device Posture
 
-**Go to:** Settings > WARP Client > Device posture
+**Go to:** Devices > Device posture
 
 ### 10.2 Add Posture Check
 
@@ -437,7 +437,7 @@ Access entire private networks, not just specific apps.
 
 ### 12.1 Configure Private Network
 
-**Go to:** Zero Trust > Networks > Tunnels > Your Tunnel
+**Go to:** Networks > Tunnels > Your Tunnel
 
 1. Go to **"Private Network"** tab
 2. Click **"Add a private network"**
@@ -446,7 +446,7 @@ Access entire private networks, not just specific apps.
 
 ### 12.2 Configure Split Tunnel
 
-**Go to:** Settings > WARP Client > Device settings > Profile
+**Go to:** Devices > Device profiles
 
 1. Edit your device profile
 2. Go to **"Split Tunnels"**

@@ -163,7 +163,7 @@ Apply DLP profiles to HTTP traffic.
 
 ### 5.1 Access HTTP Policies
 
-**Go to:** Gateway > Firewall Policies > HTTP
+**Go to:** Traffic Policies > HTTP
 
 ### 5.2 Create Block Policy for Credit Cards
 
@@ -271,9 +271,9 @@ Log the actual content that triggered DLP.
 
 ### 9.1 Enable Payload Logging
 
-**Go to:** Settings > Network > Firewall
+**Go to:** Traffic policies > Traffic settings
 
-Turn on: **Payload logging**
+Under **Payload logging**, turn on: **Enable payload logging**
 
 ### 9.2 Configure Retention
 
@@ -284,7 +284,7 @@ Set how long to retain payload logs:
 
 ### 9.3 Access Payload Logs
 
-**Go to:** Logs > Gateway > HTTP
+**Go to:** Insights > Logs > Gateway > HTTP
 
 Click on a DLP event to see:
 - Matched pattern
@@ -310,7 +310,7 @@ Click on a DLP event to see:
 
 ### 10.3 Check DLP Logs
 
-**Go to:** Logs > Gateway > HTTP
+**Go to:** Insights > Logs > Gateway > HTTP
 
 Filter by:
 - DLP Profile matched
@@ -322,7 +322,7 @@ Filter by:
 
 ### 11.1 Access Analytics
 
-**Go to:** Analytics > Gateway
+**Go to:** Insights > Analytics > Gateway
 
 ### 11.2 DLP Metrics
 

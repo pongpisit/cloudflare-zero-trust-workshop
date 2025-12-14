@@ -72,13 +72,11 @@
 
 ## Step 1: Access CASB Settings
 
-**Go to:** Gateway > CASB Integrations
+**Go to:** CASB > Integrations
 
-Or: Settings > CASB
-
-```
-https://one.dash.cloudflare.com/ > Gateway > CASB Integrations
-```
+1. Open https://one.dash.cloudflare.com/
+2. In the left sidebar, click **CASB**
+3. Click **Integrations**
 
 ---
 
@@ -155,7 +153,7 @@ Click **"Save"**
 
 ### 4.1 Access Findings
 
-**Go to:** Gateway > CASB Findings
+**Go to:** CASB > Findings
 
 Or click on an integration to see its findings.
 
@@ -256,7 +254,7 @@ Scan files in SaaS apps for sensitive data.
 
 ### 7.3 View DLP Findings
 
-**Go to:** Gateway > CASB Findings
+**Go to:** CASB > Findings
 
 Filter by: **DLP**
 
@@ -282,7 +280,7 @@ Gateway analyzes HTTP traffic to identify:
 
 ### 8.2 View Shadow IT Report
 
-**Go to:** Analytics > Access > Shadow IT
+**Go to:** Insights > Analytics > Access > Shadow IT
 
 ### 8.3 Review Discovered Apps
 
@@ -305,7 +303,7 @@ For each application, see:
 ### 8.5 Block Unauthorized Apps
 
 1. Identify high-risk unauthorized app
-2. Go to Gateway > Firewall Policies > HTTP
+2. Go to Traffic Policies > HTTP
 3. Create block policy:
 
 | Selector | Operator | Value |

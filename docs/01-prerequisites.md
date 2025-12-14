@@ -130,12 +130,12 @@ Define who can enroll devices in your organization.
 
 ### 4.1 Create Enrollment Rule
 
-**Go to:** Team & Resources > Devices > Device enrollment > Manage
+**Go to:** Devices > Device profiles > Management
 
-1. In the left sidebar, click **Team & Resources**
-2. Click **Devices**
-3. Click **Device enrollment**
-4. Click **Manage**
+1. In the left sidebar, click **Devices**
+2. Click **Device profiles**
+3. Click **Management**
+4. Under **Device enrollment permissions**, click **Manage**
 
 1. Click **"Add a rule"**
 2. **Rule name:** `Allow all users` (for workshop)
@@ -229,7 +229,7 @@ Back in the WARP client:
 
 ### 7.1 Check in Dashboard
 
-**Go to:** Zero Trust Dashboard > Team & Resources > Devices
+**Go to:** Devices
 
 You should see your device listed with:
 - Device name
@@ -256,7 +256,7 @@ To enable TLS inspection and HTTP filtering, install the Cloudflare root certifi
 
 ### 8.1 Download Certificate
 
-**Go to:** Team & Resources > Devices > User-side certificates
+**Go to:** Traffic policies > Traffic settings > Certificates
 
 Or download directly from:
 ```
@@ -339,9 +339,10 @@ https://developers.cloudflare.com/cloudflare-one/connections/connect-devices/war
 | Zero Trust Dashboard | https://one.dash.cloudflare.com |
 | WARP Downloads | https://one.one.one.one |
 | Team Name | Settings > General |
-| Device List | Team & Resources > Devices |
+| Device List | Devices |
 | Authentication | Settings > Authentication |
-| Enrollment Rules | Team & Resources > Devices > Device enrollment |
+| Enrollment Rules | Devices > Device profiles > Management |
+| Certificates | Traffic policies > Traffic settings > Certificates |
 
 ---
 

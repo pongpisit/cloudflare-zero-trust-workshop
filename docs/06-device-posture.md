@@ -46,9 +46,8 @@
 ### 1.1 Navigate to Device Posture
 
 1. Open https://one.dash.cloudflare.com/
-2. In the left sidebar, click **Team & Resources**
-3. Click **Devices**
-4. Click **Device posture**
+2. In the left sidebar, click **Devices**
+3. Click **Device posture**
 
 ---
 

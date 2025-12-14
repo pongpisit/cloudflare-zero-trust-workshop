@@ -56,12 +56,12 @@ Before enabling AV scanning:
 
 ### 1.1 Access Traffic Settings
 
-**Go to:** Settings > Network > Firewall
+**Go to:** Traffic policies > Traffic settings
 
 1. Open https://one.dash.cloudflare.com/
-2. In the left sidebar, click **Settings**
-3. Click **Network**
-4. Scroll to **Firewall** section
+2. In the left sidebar, click **Traffic policies**
+3. Click **Traffic settings**
+4. Scroll to **Anti-virus scanning** section
 
 ### 1.2 Enable AV Scanning
 
@@ -134,7 +134,7 @@ When a malicious file is blocked, users will see:
 
 ### 4.1 Block Downloads from Untrusted Sources
 
-**Go to:** Gateway > Firewall Policies > HTTP
+**Go to:** Traffic Policies > HTTP
 
 1. Click **"Add a policy"**
 2. **Name:** `Block Downloads from Risky Sites`
@@ -176,7 +176,7 @@ Some legitimate files may trigger false positives.
 
 ### 5.1 Create Do Not Scan Policy
 
-**Go to:** Gateway > Firewall Policies > HTTP
+**Go to:** Traffic Policies > HTTP
 
 1. Click **"Add a policy"**
 2. **Name:** `Do Not Scan - Development Tools`
@@ -243,7 +243,7 @@ Files that cannot be scanned:
 
 ### 7.1 Access Logs
 
-**Go to:** Logs > Gateway > HTTP
+**Go to:** Insights > Logs > Gateway > HTTP
 
 ### 7.2 Filter for AV Events
 
@@ -298,7 +298,7 @@ Save as `eicar.com` or `eicar.txt`
 
 ### 8.4 Verify in Logs
 
-**Go to:** Logs > Gateway > HTTP
+**Go to:** Insights > Logs > Gateway > HTTP
 
 Look for:
 - Action: Block
@@ -318,7 +318,7 @@ Check logs for:
 
 ### 9.2 Create Exception Policy
 
-**Go to:** Gateway > Firewall Policies > HTTP
+**Go to:** Traffic Policies > HTTP
 
 1. Click **"Add a policy"**
 2. **Name:** `Allow Known Good File`
@@ -411,11 +411,11 @@ AV scanning is one layer. Combine with:
 
 | Setting | Location |
 |---------|----------|
-| Enable AV | Settings > Network > Firewall |
-| Scan uploads | Settings > Network > Firewall |
-| Scan downloads | Settings > Network > Firewall |
-| Block non-scannable | Settings > Network > Firewall |
-| WARP notifications | Settings > Network > Firewall |
+| Enable AV | Traffic policies > Traffic settings |
+| Scan uploads | Traffic policies > Traffic settings |
+| Scan downloads | Traffic policies > Traffic settings |
+| Block non-scannable | Traffic policies > Traffic settings |
+| WARP notifications | Traffic policies > Traffic settings |
 
 ### File Size Limits
 

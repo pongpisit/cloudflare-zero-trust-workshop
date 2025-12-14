@@ -262,9 +262,9 @@ Customize the page users see when blocked.
 
 ### 8.3 Enable Block Page
 
-**Go to:** Settings > Network > Firewall
+**Go to:** Traffic policies > Traffic settings
 
-Enable: **"Display block page"**
+Under **Block page**, enable: **Display block page**
 
 > **Note:** Block page requires TLS inspection to be enabled for HTTPS sites.
 
