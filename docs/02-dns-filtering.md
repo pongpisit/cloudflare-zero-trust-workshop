@@ -285,7 +285,17 @@ This official Cloudflare page helps you verify your Zero Trust configuration is 
 
 ### 9.2 Test Category Blocking
 
-If you blocked adult content, the category should be blocked when users try to access adult sites.
+**Test URLs by Category:**
+
+| Category | Test URL | Expected Result |
+|----------|----------|----------------|
+| **Gambling** | `bet365.com` | Blocked |
+| **Gambling** | `pokerstars.com` | Blocked |
+| **Adult Content** | `pornhub.com` | Blocked |
+| **Social Media** | `facebook.com` | Blocked (if configured) |
+| **Streaming** | `netflix.com` | Blocked (if configured) |
+
+> **Note:** These are real sites. If you configured category blocking, they should be blocked.
 
 ### 9.3 Test Safe Search
 

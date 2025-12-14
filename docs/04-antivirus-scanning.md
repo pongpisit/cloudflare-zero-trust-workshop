@@ -270,9 +270,13 @@ Save as `eicar.com` or `eicar.txt`
 ### 8.2 Test Download Blocking
 
 1. Ensure WARP is connected
-2. Try to download the EICAR test file
+2. Try to download the EICAR test file from: `https://www.eicar.org/download-anti-malware-testfile/`
 3. Gateway should block the download
 4. Check logs for the blocked event
+
+**Alternative test sites:**
+- `https://www.wicar.org/test-malware.html` - Browser malware test
+- `https://www.amtso.org/feature-settings-check/` - Security feature check
 
 ### 8.3 Test Upload Blocking
 
