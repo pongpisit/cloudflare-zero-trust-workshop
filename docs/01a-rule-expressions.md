@@ -344,6 +344,76 @@ Lists let you manage values centrally and reuse them across policies.
 
 ---
 
+## Hands-On: Create a Rule in the Dashboard
+
+Let's create a rule to see how Traffic, Identity, and Device signals work together in the UI.
+
+**Go to:** Traffic policies > Firewall policies > DNS
+
+![Firewall Policies](./screenshots/auto/nav-traffic-policies-firewall-policies.png)
+
+### Step 1: Create a New Policy
+
+1. Click **Add a policy**
+2. Enter a **Policy name** (e.g., "Block Social Media for Non-Marketing")
+
+### Step 2: Add Traffic Selector
+
+In the **Traffic** section:
+1. Click **Add condition**
+2. **Selector:** `Content Categories`
+3. **Operator:** `in`
+4. **Value:** Select `Social Media`
+
+This defines WHAT traffic the rule applies to.
+
+### Step 3: Add Identity Selector
+
+Click **Add condition** again to add an identity condition:
+1. **Selector:** `User Group Names`
+2. **Operator:** `not in`
+3. **Value:** `Marketing`
+
+This defines WHO the rule applies to (everyone except Marketing).
+
+### Step 4: Add Device Selector (Optional)
+
+Click **Add condition** to add a device condition:
+1. **Selector:** `Passed Device Posture Checks`
+2. **Operator:** `is`
+3. **Value:** `true`
+
+This ensures the rule only applies to compliant devices.
+
+### Step 5: Set Action
+
+1. **Action:** Select `Block`
+2. Optionally enable **Display block page** to show users why they're blocked
+
+![Policy Add Rule](./screenshots/auto/policy-add-rule.png)
+
+### Step 6: Save
+
+Click **Save policy** to activate the rule.
+
+### Understanding the Expression
+
+The rule you created translates to:
+
+```
+IF   Content Categories IN { Social Media }
+AND  User Group Names NOT IN { Marketing }
+AND  Passed Device Posture Checks IS true
+THEN Block
+```
+
+This demonstrates how you combine:
+- **Traffic signals** (Content Categories)
+- **Identity signals** (User Group Names)  
+- **Device signals** (Device Posture Checks)
+
+---
+
 ## Practical Examples
 
 ### Example 1: DNS Policy - Block Threats Except for Security Team
