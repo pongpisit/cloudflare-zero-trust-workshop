@@ -266,10 +266,6 @@ To enable TLS inspection and HTTP filtering, install the Cloudflare root certifi
 
 ![Traffic policies > Traffic settings > Certificates](./screenshots/auto/nav-traffic-policies-traffic-settings-certificates.png)
 
-Or download directly from:
-```
-https://developers.cloudflare.com/cloudflare-one/connections/connect-devices/warp/user-side-certificates/
-```
 
 ### 8.2 Install on Windows
 

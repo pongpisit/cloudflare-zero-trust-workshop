@@ -44,11 +44,11 @@ This guide gets you basic Zero Trust protection as fast as possible.
 
 ### 2.1 Download
 
-Go to: https://one.one.one.one/
+Go to: https://developers.cloudflare.com/cloudflare-one/team-and-resources/devices/warp/download-warp/
 
 Or direct links:
-- **Windows:** https://install.appcenter.ms/orgs/cloudflare/apps/1.1.1.1-windows-1/distribution_groups/release
-- **macOS:** https://install.appcenter.ms/orgs/cloudflare/apps/1.1.1.1-macos-1/distribution_groups/release
+- **Windows:** https://downloads.cloudflareclient.com/v1/download/windows/ga
+- **macOS:** https://downloads.cloudflareclient.com/v1/download/macos/ga
 
 ### 2.2 Install & Connect
 
