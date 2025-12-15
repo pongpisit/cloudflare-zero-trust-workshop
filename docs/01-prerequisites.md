@@ -45,7 +45,7 @@ https://dash.cloudflare.com/sign-up
 https://dash.cloudflare.com/
 ```
 
-![https://dash.cloudflare.com/](./screenshots/auto/nav-https-dash-cloudflare-com.png)
+![Cloudflare Dashboard](./screenshots/auto/dashboard-home.png)
 
 You should see the Cloudflare Dashboard.
 
