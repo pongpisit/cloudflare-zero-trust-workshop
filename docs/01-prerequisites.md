@@ -38,34 +38,22 @@ https://dash.cloudflare.com/sign-up
 2. Find the email from Cloudflare
 3. Click the **verification link** in the email
 
-### 1.3 Log In to Dashboard
+### 1.3 Access Zero Trust Dashboard
 
 **Go to:**
 ```
-https://dash.cloudflare.com/
+https://one.dash.cloudflare.com/
 ```
 
-![Cloudflare Dashboard](./screenshots/auto/dashboard-home.png)
+![Zero Trust Dashboard](./screenshots/auto/dashboard-home.png)
 
-You should see the Cloudflare Dashboard.
+You should see the Zero Trust Dashboard.
 
 ---
 
 ## Step 2: Create Zero Trust Organization
 
-### 2.1 Access Zero Trust
-
-**In the Cloudflare Dashboard:**
-
-1. Look at the left sidebar
-2. Click **"Zero Trust"**
-
-Or go directly to:
-```
-https://one.dash.cloudflare.com/
-```
-
-### 2.2 Set Up Your Organization
+### 2.1 Set Up Your Organization
 
 **On the onboarding screen:**
 
