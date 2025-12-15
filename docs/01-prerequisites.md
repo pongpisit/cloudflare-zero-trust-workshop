@@ -172,19 +172,20 @@ The WARP client connects your device to Cloudflare Zero Trust.
 
 ### 5.1 Download WARP Client
 
-**Go to:** https://one.one.one.one/
-
-![https://one.one.one.one/](./screenshots/auto/nav-https-one-one-one-one.png)
+**Go to:** https://developers.cloudflare.com/cloudflare-one/team-and-resources/devices/warp/download-warp/
 
 Or download directly:
 
 | Platform | Download Link |
 |----------|---------------|
-| Windows | https://install.appcenter.ms/orgs/cloudflare/apps/1.1.1.1-windows-1/distribution_groups/release |
-| macOS | https://install.appcenter.ms/orgs/cloudflare/apps/1.1.1.1-macos-1/distribution_groups/release |
-| iOS | App Store: "1.1.1.1: Faster Internet" |
-| Android | Play Store: "1.1.1.1: Faster & Safer Internet" |
+| Windows | https://downloads.cloudflareclient.com/v1/download/windows/ga |
+| macOS | https://downloads.cloudflareclient.com/v1/download/macos/ga |
+| iOS | App Store: "Cloudflare One Agent" |
+| Android | Play Store: "Cloudflare One Agent" |
 | Linux | https://pkg.cloudflareclient.com/ |
+| ChromeOS | Play Store: "Cloudflare One Agent" (Android app) |
+
+> **Note:** The legacy 1.1.1.1 apps have been replaced by the **Cloudflare One Agent**. If you have the old app installed, refer to the [migration guide](https://developers.cloudflare.com/cloudflare-one/team-and-resources/devices/warp/download-warp/cloudflare-one-agent-migration/).
 
 ### 5.2 Install on Windows
 
@@ -344,7 +345,7 @@ https://developers.cloudflare.com/cloudflare-one/connections/connect-devices/war
 | Item | Location |
 |------|----------|
 | Zero Trust Dashboard | https://one.dash.cloudflare.com |
-| WARP Downloads | https://one.one.one.one |
+| WARP Downloads | https://developers.cloudflare.com/cloudflare-one/team-and-resources/devices/warp/download-warp/ |
 | Team Name | Settings > General |
 | Device List | Team & Resources > Devices |
 | Identity Providers | Integrations > Identity providers |
