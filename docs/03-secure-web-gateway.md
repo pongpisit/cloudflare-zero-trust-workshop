@@ -125,6 +125,8 @@ Block access to security threats at the HTTP level.
 3. Click **Firewall policies**
 4. Select the **HTTP** tab
 
+![HTTP Policies List](./screenshots/auto/traffic-policies-firewall-http.png)
+
 ### 3.2 Add New Policy
 
 1. Click **"Add a policy"**
@@ -144,6 +146,8 @@ Block access to security threats at the HTTP level.
 ### 3.5 Save Policy
 
 Click **"Create policy"**
+
+![Add HTTP Policy Form](./screenshots/auto/add-http-policy.png)
 
 ---
 
@@ -367,6 +371,8 @@ You should see:
 - Action taken (Allow/Block)
 - Policy matched
 - File type (if applicable)
+
+![Gateway HTTP Logs](./screenshots/auto/insights-logs-http.png)
 
 ---
 

@@ -211,12 +211,14 @@ Repeat the process to add more applications:
 
 Click on your tunnel to view connector details:
 
-![ZTNA Connector Status](./screenshots/auto/ztna-connector-status.png)
+![Tunnel Detail](./screenshots/auto/tunnel-detail.png)
 
 Your tunnel should show:
 - **Status:** Healthy (green)
 - **Connectors:** 1 (or more)
 - **Public Hostnames:** Listed routes
+
+![Connectors List](./screenshots/auto/networks-connectors.png)
 
 ---
 
@@ -228,10 +230,12 @@ Protect your application with Access policies.
 
 **Go to:** Access controls > Applications
 
-![Access controls > Applications](./screenshots/auto/nav-access-controls-applications.png)
+![Access controls > Applications](./screenshots/auto/access-controls-applications.png)
 
 1. Click **"Add an application"**
 2. Select **"Self-hosted"**
+
+![Add Access Application](./screenshots/auto/add-access-app.png)
 
 ### 4.2 Configure Application
 
@@ -297,7 +301,7 @@ Reusable groups for policies.
 
 **Go to:** Access controls > Policies
 
-![Access controls > Policies](./screenshots/auto/nav-access-controls-policies.png)
+![Access controls > Policies](./screenshots/auto/access-controls-policies.png)
 
 1. Click **"Add a group"**
 2. **Name:** Employees

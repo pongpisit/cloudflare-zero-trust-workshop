@@ -51,6 +51,8 @@
 2. In the left sidebar, click **Reusable components**
 3. Click **Posture checks**
 
+![Posture Checks List](./screenshots/auto/reusable-components-posture-checks.png)
+
 ---
 
 ## Step 2: Create Posture Checks
@@ -153,6 +155,8 @@ For Crowdstrike:
 
 1. Go to **Team & Resources** > **Devices**
 2. Click **Device profiles** tab
+
+![Device Profiles](./screenshots/auto/device-profiles.png)
 
 ### 4.2 Create Device Profile
 
@@ -279,6 +283,8 @@ If you believe this is a mistake, please contact IT support.
 2. Click on a device
 3. View **Posture** tab
 
+![Device Detail](./screenshots/auto/device-detail.png)
+
 ### 7.2 Device Information
 
 | Field | Description |
@@ -304,6 +310,12 @@ If you believe this is a mistake, please contact IT support.
 
 1. Go to **Team & Resources** > **Users**
 2. See all enrolled users
+
+![Users List](./screenshots/auto/team-resources-users.png)
+
+Click on a user to see their details:
+
+![User Detail](./screenshots/auto/user-detail.png)
 
 ### 8.2 User Information
 

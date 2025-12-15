@@ -49,6 +49,8 @@
 | **HTTP** | All HTTP/HTTPS requests |
 | **Network** | TCP/UDP connections |
 
+![Gateway Logs](./screenshots/auto/insights-logs-gateway.png)
+
 ---
 
 ## Step 2: Understanding DNS Logs
@@ -161,6 +163,8 @@
 ### 5.1 Gateway Analytics
 
 1. Go to **Analytics** > **Gateway**
+
+![Insights Dashboards](./screenshots/auto/insights-dashboards.png)
 
 **Available metrics:**
 - Total DNS queries

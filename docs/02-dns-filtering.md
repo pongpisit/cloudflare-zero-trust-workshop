@@ -56,6 +56,8 @@
 
 You will see the DNS policies page where you can create and manage policies.
 
+![DNS Policies List](./screenshots/auto/traffic-policies-firewall-dns.png)
+
 ---
 
 ## Step 2: Create Security Policy (Block Threats)
@@ -93,6 +95,8 @@ This policy blocks known malicious domains.
 ### 2.4 Save Policy
 
 Click **"Create policy"**
+
+![Add DNS Policy Form](./screenshots/auto/add-dns-policy.png)
 
 ---
 
@@ -323,6 +327,8 @@ You should see:
 - Allowed queries (green)
 - Blocked queries (red)
 - Query details (domain, user, device, policy matched)
+
+![Gateway DNS Logs](./screenshots/auto/insights-logs-dns.png)
 
 ---
 

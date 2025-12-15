@@ -69,6 +69,8 @@ Before configuring DLP:
 2. In the left sidebar, click **Data loss prevention**
 3. Click **Profiles**
 
+![DLP Profiles List](./screenshots/auto/dlp-profiles.png)
+
 ---
 
 ## Step 2: Explore Predefined DLP Profiles
