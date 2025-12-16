@@ -72,6 +72,10 @@ You should see the Zero Trust Dashboard.
 
 **Click "Proceed to Zero Trust"**
 
+### 2.2 View Teams Name
+   - Go to Settings > Team Name
+   - Copy Team Domain e.g. <slug-name.cloudflareaccess.com>
+
 ### 2.3 Verify Setup
 
 You should now see the Zero Trust dashboard with:
