@@ -238,7 +238,7 @@ This forces:
 
 | Selector | Operator | Value |
 |----------|----------|-------|
-| Application | is | YouTube |
+| Application | in | YouTube |
 
 ### 7.3 Set Action
 
