@@ -131,13 +131,13 @@ Block access to security threats at the HTTP level.
 
 1. Click **"Add a policy"**
 2. **Name:** `Block Security Threats - HTTP`
-3. **Description:** `Block malicious URLs and security risks`
+3. **Description:** `Block malicious URLs and Security Categories`
 
 ### 3.3 Configure Traffic Selector
 
 | Selector | Operator | Value |
 |----------|----------|-------|
-| Security Risks | in | All security risks |
+| Security Categories | in | All Security Categories |
 
 ### 3.4 Set Action
 
@@ -266,7 +266,7 @@ Block specific URL paths or patterns.
 |----------|----------|-------|
 | URL Path | matches regex | `.*(login|signin|auth).*` |
 | AND | | |
-| Security Risks | in | Phishing |
+| Security Categories | in | Phishing |
 
 **Action:** Block
 
@@ -333,7 +333,7 @@ Isolate risky websites in a remote browser.
 
 | Selector | Operator | Value |
 |----------|----------|-------|
-| Security Risks | in | Suspicious, Unknown |
+| Security Categories | in | Suspicious, Unknown |
 
 **Action:** Isolate
 
@@ -512,7 +512,7 @@ Action: Isolate
 | Upload File Types | Control uploads |
 | HTTP Method | Control actions (GET/POST) |
 | Content Categories | Filter by category |
-| Security Risks | Block threats |
+| Security Categories | Block threats |
 
 ---
 
