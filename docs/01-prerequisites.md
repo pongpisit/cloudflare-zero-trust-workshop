@@ -145,6 +145,7 @@ Define who can enroll devices in your organization.
 3. **Rule action:** Allow
 4. **Include:** Everyone
 5. Click **"Save"**
+6. Select existing policie created from previos step and click confirm.
 
 > **For production:** Create specific rules based on email domain, user groups, or identity provider groups.
 
