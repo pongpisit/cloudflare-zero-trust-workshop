@@ -159,7 +159,7 @@ Once installed, your connector should show:
 
 ---
 
-## Step 2: Add Public Hostname for Netdata
+## Step 2: Add Public Hostname(Published application routes) for Netdata
 
 After the connector is running, configure where traffic should go. We will expose the Netdata dashboard.
 
@@ -167,7 +167,7 @@ After the connector is running, configure where traffic should go. We will expos
 
 In the tunnel configuration wizard (or click on your tunnel later):
 
-1. Go to **"Public Hostname"** tab
+1. Go to **"Published application routes"** tab
 2. Click **"Add a public hostname"**
 
 ### 2.2 Configure Hostname for Netdata
